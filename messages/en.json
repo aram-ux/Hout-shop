@@ -41,6 +41,7 @@
     "home": "Home",
     "products": "Products",
     "about": "About",
+    "info": "Product Info",
     "contact": "Contact",
     "cart": "Cart",
     "checkout": "Checkout"
@@ -200,6 +201,139 @@
     "faq": "FAQ",
     "copyright": "© {year} Hout-Shop. All rights reserved.",
     "vatLabel": "VAT"
+  },
+  "info": {
+    "title": "Product Information",
+    "subtitle": "Everything about our oak panels",
+    "description": "Discover everything about the qualities, origins, dimensions and types of panels we offer. So you always make the right choice for your project.",
+    "qualities": {
+      "title": "Qualities",
+      "intro": "Our oak panels are available in several quality grades. Each quality has its own character and applications.",
+      "ab": {
+        "name": "A/B Quality",
+        "description": "The highest quality. One side is completely flawless and carefully selected by colour. Ideal for visible applications such as furniture, tabletops and wall cladding.",
+        "features": {
+          "0": "1 side flawless, selected by colour",
+          "1": "Minimal colour variation",
+          "2": "Suitable for high-end finishes"
+        }
+      },
+      "rustic": {
+        "name": "Rustic",
+        "description": "Natural character with visible knots. Knots with a diameter up to 30-35 mm, knots not repaired. Provides a warm, authentic appearance.",
+        "features": {
+          "0": "Knots up to \u00d8 30-35 mm, not repaired",
+          "1": "Natural colour variation",
+          "2": "Popular for rustic and country-style projects"
+        }
+      },
+      "prime": {
+        "name": "Prime / Natural",
+        "description": "A beautiful balance between A/B and Rustic. Small knots and natural grain are permitted, providing a lively yet refined appearance.",
+        "features": {
+          "0": "Small knots permitted",
+          "1": "Natural wood grain structure",
+          "2": "Versatile applications"
+        }
+      }
+    },
+    "panels": {
+      "title": "Panel Types",
+      "intro": "We offer various panel construction types, each with their own properties and applications.",
+      "fingerJoint": {
+        "name": "Finger Joint",
+        "description": "Lamellas are joined using a finger joint connection. This results in a strong and stable panel. The joints are subtly visible and give the panel a characteristic look. Very suitable for worktops and structural applications."
+      },
+      "continuous": {
+        "name": "Continuous Lamella",
+        "description": "The lamellas run the full length of the panel without interruptions. This creates a calm and elegant appearance. Premium choice for tabletops, furniture and high-end interior projects."
+      },
+      "threeLayer": {
+        "name": "Three-Layer Panel",
+        "description": "Constructed from three layers of wood glued crosswise. This ensures maximum stability and minimal movement. Extremely suitable for wide panels, tabletops and applications where dimensional stability is crucial."
+      },
+      "singleLayer": {
+        "name": "Single-Layer Panel (Solid)",
+        "description": "Fully solid panel consisting of one layer of glued lamellas. Ideal for thicker applications and when the solid appearance of real wood is desired."
+      }
+    },
+    "origins": {
+      "title": "Origins",
+      "intro": "The origin of the oak wood partly determines the character, colour and grain of the panel.",
+      "european": {
+        "name": "European Oak",
+        "description": "Sourced from sustainably managed European forests. Characterised by a warm, golden-brown colour and regular grain. The most versatile choice for various applications."
+      },
+      "french": {
+        "name": "French Oak",
+        "description": "Valued for its fine grain structure and light colour. French oak is particularly suitable for elegant interior projects and furniture with a refined appearance."
+      },
+      "slavonian": {
+        "name": "Slavonian Oak",
+        "description": "Premium oak wood from the Slavonian forests of Croatia. Known for its exceptionally fine and straight grain, light colour and minimal knots. The choice par excellence for exclusive projects."
+      },
+      "american": {
+        "name": "American White Oak",
+        "description": "Slightly lighter in colour than European oak with a more pronounced grain pattern. Very durable and water-resistant, making it also suitable for kitchens and bathrooms."
+      }
+    },
+    "dimensions": {
+      "title": "Dimensions",
+      "intro": "Our panels are available in a wide range of dimensions. We also offer custom sizes for your specific project.",
+      "property": "Property",
+      "range": "Range",
+      "thickness": {
+        "label": "Thickness",
+        "value": "18 mm / 20 mm / 26 mm / 40 mm / 50 mm"
+      },
+      "width": {
+        "label": "Width",
+        "value": "200 mm - 1250 mm"
+      },
+      "length": {
+        "label": "Length",
+        "value": "800 mm - 5000 mm"
+      },
+      "lamella": {
+        "label": "Lamella Width",
+        "value": "40 mm / 70-90 mm / continuous"
+      }
+    },
+    "general": {
+      "title": "General Product Information",
+      "property": "Property",
+      "value": "Value",
+      "moisture": {
+        "label": "Moisture Content",
+        "value": "9% +/- 2%"
+      },
+      "finish": {
+        "label": "Finish",
+        "value": "Square sawn, calibrated, grit 100-120 sanded"
+      },
+      "structure": {
+        "label": "Structure",
+        "value": "Quarter, false quarter, plain mixed"
+      },
+      "lamella": {
+        "label": "Lamellas",
+        "value": "70 - 90 mm width (standard)"
+      },
+      "glue": {
+        "label": "Gluing",
+        "value": "D3/D4 water-resistant glue"
+      },
+      "certification": {
+        "label": "Certification",
+        "value": "FSC / PEFC certified (on request)"
+      }
+    },
+    "cta": {
+      "title": "Need help choosing?",
+      "text": "Our wood specialists are happy to help you choose the right panel for your project. Contact us without obligation.",
+      "products": "View products",
+      "contact": "Get in touch"
+    }
   },
   "trust": {
     "freeShipping": "Free shipping",

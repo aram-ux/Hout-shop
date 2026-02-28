@@ -18,6 +18,7 @@ export default function Footer() {
     const paths: Record<string, Record<Locale, string>> = {
       products: { nl: "/producten", fr: "/produits", en: "/products" },
       about: { nl: "/over-ons", fr: "/a-propos", en: "/about" },
+      info: { nl: "/info", fr: "/info", en: "/info" },
       contact: { nl: "/contact", fr: "/contact", en: "/contact" },
     };
     return `${prefix}${paths[key]?.[locale] || ""}`;
@@ -85,6 +86,14 @@ export default function Footer() {
                   className="text-oak-300 hover:text-gold transition-colors text-sm"
                 >
                   {tn("about")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getPath("info")}
+                  className="text-oak-300 hover:text-gold transition-colors text-sm"
+                >
+                  {tn("info")}
                 </Link>
               </li>
               <li>

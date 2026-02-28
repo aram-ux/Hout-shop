@@ -41,6 +41,7 @@
     "home": "Home",
     "products": "Producten",
     "about": "Over ons",
+    "info": "Productinfo",
     "contact": "Contact",
     "cart": "Winkelmand",
     "checkout": "Afrekenen"
@@ -200,6 +201,139 @@
     "faq": "Veelgestelde vragen",
     "copyright": "© {year} Hout-Shop. Alle rechten voorbehouden.",
     "vatLabel": "BTW"
+  },
+  "info": {
+    "title": "Productinformatie",
+    "subtitle": "Alles over onze eiken panelen",
+    "description": "Ontdek alles over de kwaliteiten, herkomst, afmetingen en soorten panelen die wij aanbieden. Zo maakt u altijd de juiste keuze voor uw project.",
+    "qualities": {
+      "title": "Kwaliteiten",
+      "intro": "Onze eiken panelen zijn beschikbaar in verschillende kwaliteitsklassen. Elke kwaliteit heeft zijn eigen karakter en toepassingen.",
+      "ab": {
+        "name": "A/B Kwaliteit",
+        "description": "De hoogste kwaliteit. Eén zijde is volledig foutvrij en zorgvuldig geselecteerd op kleur. Ideaal voor zichtbare toepassingen zoals meubels, tafelbladen en wandbekleding.",
+        "features": {
+          "0": "1 zijde foutvrij, geselecteerd op kleur",
+          "1": "Minimale kleurvariatie",
+          "2": "Geschikt voor hoogwaardige afwerking"
+        }
+      },
+      "rustic": {
+        "name": "Rustiek",
+        "description": "Natuurlijk karakter met zichtbare knopen. Knopen met een diameter tot 30 à 35 mm, knopen niet hersteld. Geeft een warme, authentieke uitstraling.",
+        "features": {
+          "0": "Knopen tot Ø 30-35 mm, niet hersteld",
+          "1": "Natuurlijke kleurvariatie",
+          "2": "Populair voor rustieke en landelijke projecten"
+        }
+      },
+      "prime": {
+        "name": "Prime / Natuur",
+        "description": "Een mooie balans tussen A/B en Rustiek. Lichte knopen en natuurlijke tekening zijn toegestaan, wat zorgt voor een levendig maar verzorgd uiterlijk.",
+        "features": {
+          "0": "Kleine knopen toegestaan",
+          "1": "Natuurlijke houtnerfstructuur",
+          "2": "Veelzijdig inzetbaar"
+        }
+      }
+    },
+    "panels": {
+      "title": "Soorten Panelen",
+      "intro": "Wij bieden verschillende typen paneelconstructies aan, elk met hun eigen eigenschappen en toepassingen.",
+      "fingerJoint": {
+        "name": "Vingerlas (Finger Joint)",
+        "description": "Lamellen worden met een vingerverbinding aan elkaar gelast. Dit resulteert in een sterk en stabiel paneel. De lasnaden zijn subtiel zichtbaar en geven het paneel een karakteristiek uiterlijk. Zeer geschikt voor werkbladen en constructieve toepassingen."
+      },
+      "continuous": {
+        "name": "Doorlopende Lamel",
+        "description": "De lamellen lopen over de volledige lengte van het paneel door, zonder onderbrekingen. Dit geeft een rustig en elegant beeld. Premium keuze voor tafelbladen, meubels en hoogwaardige interieurprojecten."
+      },
+      "threeLayer": {
+        "name": "Drielaags Paneel",
+        "description": "Opgebouwd uit drie lagen hout die kruislings zijn verlijmd. Dit zorgt voor maximale stabiliteit en minimale werking. Uitermate geschikt voor brede panelen, tafelbladen en toepassingen waar dimensionale stabiliteit cruciaal is."
+      },
+      "singleLayer": {
+        "name": "Eenlaags Paneel (Massief)",
+        "description": "Volledig massief paneel bestaande uit één laag verlijmde lamellen. Ideaal voor dikkere toepassingen en wanneer de massieve uitstraling van echt hout gewenst is."
+      }
+    },
+    "origins": {
+      "title": "Herkomst",
+      "intro": "De herkomst van het eikenhout bepaalt mede het karakter, de kleur en de nerf van het paneel.",
+      "european": {
+        "name": "Europees Eiken",
+        "description": "Afkomstig uit duurzaam beheerde Europese bossen. Kenmerkt zich door een warme, goudbruine kleur en een regelmatige nerf. De meest veelzijdige keuze voor diverse toepassingen."
+      },
+      "french": {
+        "name": "Frans Eiken",
+        "description": "Gewaardeerd om zijn fijne nerfstructuur en lichte kleur. Frans eiken is bijzonder geschikt voor elegante interieurprojecten en meubels met een verfijnde uitstraling."
+      },
+      "slavonian": {
+        "name": "Slavonisch Eiken",
+        "description": "Premium eikenhout uit de Slavonische bossen van Kroatië. Staat bekend om zijn uitzonderlijk fijne en rechte nerf, lichte kleur en minimale knopen. De keuze bij uitstek voor exclusieve projecten."
+      },
+      "american": {
+        "name": "Amerikaans Wit Eiken",
+        "description": "Iets lichter van kleur dan Europees eiken met een meer uitgesproken nerfpatroon. Zeer duurzaam en waterbestendig, waardoor het ook geschikt is voor keukens en badkamers."
+      }
+    },
+    "dimensions": {
+      "title": "Afmetingen",
+      "intro": "Onze panelen zijn beschikbaar in een breed scala aan afmetingen. Wij bieden ook maatwerk aan voor uw specifieke project.",
+      "property": "Eigenschap",
+      "range": "Bereik",
+      "thickness": {
+        "label": "Dikte",
+        "value": "18 mm / 20 mm / 26 mm / 40 mm / 50 mm"
+      },
+      "width": {
+        "label": "Breedte",
+        "value": "200 mm - 1250 mm"
+      },
+      "length": {
+        "label": "Lengte",
+        "value": "800 mm - 5000 mm"
+      },
+      "lamella": {
+        "label": "Lamelbreedte",
+        "value": "40 mm / 70-90 mm / doorlopend"
+      }
+    },
+    "general": {
+      "title": "Algemene Productinformatie",
+      "property": "Eigenschap",
+      "value": "Waarde",
+      "moisture": {
+        "label": "Vochtigheid",
+        "value": "9% +/- 2%"
+      },
+      "finish": {
+        "label": "Afwerking",
+        "value": "Haaks gezaagd, gekalibreerd, korrel 100-120 geschuurd"
+      },
+      "structure": {
+        "label": "Structuur",
+        "value": "Kwartier, vals kwartier, dosse gemengd"
+      },
+      "lamella": {
+        "label": "Lamellen",
+        "value": "70 - 90 mm breedte (standaard)"
+      },
+      "glue": {
+        "label": "Verlijming",
+        "value": "D3/D4 waterbestendige verlijming"
+      },
+      "certification": {
+        "label": "Certificering",
+        "value": "FSC / PEFC gecertificeerd (op aanvraag)"
+      }
+    },
+    "cta": {
+      "title": "Hulp nodig bij uw keuze?",
+      "text": "Onze houtspecialisten helpen u graag bij het kiezen van het juiste paneel voor uw project. Neem vrijblijvend contact met ons op.",
+      "products": "Bekijk producten",
+      "contact": "Neem contact op"
+    }
   },
   "trust": {
     "freeShipping": "Gratis verzending",

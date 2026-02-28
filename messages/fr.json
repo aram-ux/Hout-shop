@@ -41,6 +41,7 @@
     "home": "Accueil",
     "products": "Produits",
     "about": "À propos",
+    "info": "Info Produit",
     "contact": "Contact",
     "cart": "Panier",
     "checkout": "Paiement"
@@ -200,6 +201,139 @@
     "faq": "Questions fréquentes",
     "copyright": "© {year} Hout-Shop. Tous droits réservés.",
     "vatLabel": "TVA"
+  },
+  "info": {
+    "title": "Informations Produit",
+    "subtitle": "Tout sur nos panneaux en chêne",
+    "description": "Découvrez tout sur les qualités, origines, dimensions et types de panneaux que nous proposons. Ainsi, vous faites toujours le bon choix pour votre projet.",
+    "qualities": {
+      "title": "Qualités",
+      "intro": "Nos panneaux en chêne sont disponibles en plusieurs classes de qualité. Chaque qualité a son propre caractère et ses applications.",
+      "ab": {
+        "name": "Qualité A/B",
+        "description": "La plus haute qualité. Un côté est totalement exempt de défauts et soigneusement sélectionné par couleur. Idéal pour les applications visibles telles que meubles, plateaux de table et revêtements muraux.",
+        "features": {
+          "0": "1 côté sans défaut, sélectionné par couleur",
+          "1": "Variation de couleur minimale",
+          "2": "Convient aux finitions haut de gamme"
+        }
+      },
+      "rustic": {
+        "name": "Rustique",
+        "description": "Caractère naturel avec n\u0153uds visibles. N\u0153uds d'un diamètre jusqu'à 30-35 mm, n\u0153uds non réparés. Donne une apparence chaleureuse et authentique.",
+        "features": {
+          "0": "N\u0153uds jusqu'à \u00d8 30-35 mm, non réparés",
+          "1": "Variation de couleur naturelle",
+          "2": "Populaire pour les projets rustiques et champêtres"
+        }
+      },
+      "prime": {
+        "name": "Prime / Naturel",
+        "description": "Un bel équilibre entre A/B et Rustique. De petits n\u0153uds et un grain naturel sont autorisés, offrant un aspect vivant mais soigné.",
+        "features": {
+          "0": "Petits n\u0153uds autorisés",
+          "1": "Structure naturelle du grain du bois",
+          "2": "Applications polyvalentes"
+        }
+      }
+    },
+    "panels": {
+      "title": "Types de Panneaux",
+      "intro": "Nous proposons différents types de construction de panneaux, chacun avec ses propres propriétés et applications.",
+      "fingerJoint": {
+        "name": "Abouté (Finger Joint)",
+        "description": "Les lamelles sont assemblées par une jonction à entures multiples. Cela donne un panneau solide et stable. Les joints sont subtilement visibles et donnent au panneau un aspect caractéristique. Très adapté aux plans de travail et applications structurelles."
+      },
+      "continuous": {
+        "name": "Lamelle Continue",
+        "description": "Les lamelles parcourent toute la longueur du panneau sans interruption. Cela crée un aspect calme et élégant. Choix premium pour plateaux de table, meubles et projets d'intérieur haut de gamme."
+      },
+      "threeLayer": {
+        "name": "Panneau Trois Couches",
+        "description": "Composé de trois couches de bois collées en croix. Cela garantit une stabilité maximale et un mouvement minimal. Extrêmement adapté aux panneaux larges, plateaux de table et applications où la stabilité dimensionnelle est cruciale."
+      },
+      "singleLayer": {
+        "name": "Panneau Monocouche (Massif)",
+        "description": "Panneau entièrement massif composé d'une couche de lamelles collées. Idéal pour les applications plus épaisses et lorsque l'aspect massif du vrai bois est souhaité."
+      }
+    },
+    "origins": {
+      "title": "Origines",
+      "intro": "L'origine du bois de chêne détermine en partie le caractère, la couleur et le grain du panneau.",
+      "european": {
+        "name": "Chêne Européen",
+        "description": "Provenant de forêts européennes gérées durablement. Se caractérise par une couleur brun doré chaleureuse et un grain régulier. Le choix le plus polyvalent pour diverses applications."
+      },
+      "french": {
+        "name": "Chêne Français",
+        "description": "Apprécié pour sa structure de grain fine et sa couleur claire. Le chêne français est particulièrement adapté aux projets d'intérieur élégants et aux meubles à l'aspect raffiné."
+      },
+      "slavonian": {
+        "name": "Chêne de Slavonie",
+        "description": "Bois de chêne premium des forêts slavonnes de Croatie. Connu pour son grain exceptionnellement fin et droit, sa couleur claire et ses n\u0153uds minimaux. Le choix par excellence pour les projets exclusifs."
+      },
+      "american": {
+        "name": "Chêne Blanc Américain",
+        "description": "Légèrement plus clair que le chêne européen avec un motif de grain plus prononcé. Très durable et résistant à l'eau, ce qui le rend également adapté aux cuisines et salles de bains."
+      }
+    },
+    "dimensions": {
+      "title": "Dimensions",
+      "intro": "Nos panneaux sont disponibles dans une large gamme de dimensions. Nous proposons également du sur mesure pour votre projet spécifique.",
+      "property": "Propriété",
+      "range": "Gamme",
+      "thickness": {
+        "label": "Épaisseur",
+        "value": "18 mm / 20 mm / 26 mm / 40 mm / 50 mm"
+      },
+      "width": {
+        "label": "Largeur",
+        "value": "200 mm - 1250 mm"
+      },
+      "length": {
+        "label": "Longueur",
+        "value": "800 mm - 5000 mm"
+      },
+      "lamella": {
+        "label": "Largeur lamelle",
+        "value": "40 mm / 70-90 mm / continue"
+      }
+    },
+    "general": {
+      "title": "Informations Générales du Produit",
+      "property": "Propriété",
+      "value": "Valeur",
+      "moisture": {
+        "label": "Taux d'humidité",
+        "value": "9% +/- 2%"
+      },
+      "finish": {
+        "label": "Finition",
+        "value": "Scié droit, calibré, ponce grain 100-120"
+      },
+      "structure": {
+        "label": "Structure",
+        "value": "Quartier, faux quartier, dosse mélangé"
+      },
+      "lamella": {
+        "label": "Lamelles",
+        "value": "70 - 90 mm de largeur (standard)"
+      },
+      "glue": {
+        "label": "Collage",
+        "value": "Colle résistante à l'eau D3/D4"
+      },
+      "certification": {
+        "label": "Certification",
+        "value": "Certifié FSC / PEFC (sur demande)"
+      }
+    },
+    "cta": {
+      "title": "Besoin d'aide pour choisir ?",
+      "text": "Nos spécialistes du bois sont heureux de vous aider à choisir le bon panneau pour votre projet. Contactez-nous sans engagement.",
+      "products": "Voir les produits",
+      "contact": "Nous contacter"
+    }
   },
   "trust": {
     "freeShipping": "Livraison gratuite",

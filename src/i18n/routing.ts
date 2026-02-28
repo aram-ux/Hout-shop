@@ -41,6 +41,11 @@ export const routing = defineRouting({
       fr: "/contact",
       en: "/contact",
     },
+    "/info": {
+      nl: "/info",
+      fr: "/info",
+      en: "/info",
+    },
   },
 });
 
