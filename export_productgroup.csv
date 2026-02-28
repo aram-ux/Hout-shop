@@ -1,0 +1,46 @@
+﻿product_id;accountancy;group1;mancode;brand;itemnumber;barcode;description;active;Dikte;Breedte;Lengte;m²;€/m² AKP;€/m² VKP;AKP €/stk;VKP €/stk;Marge;;;;;;;;;;;;;;;;;;;;;;;;;;
+7944;Decotrap;PANELEN;Eik 12 1000-600;Decotrap;Eik 12 1000-600;;Eiken paneel Kwaliteit A 1000x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7945;Decotrap;PANELEN;Eik 12 1100-600;Decotrap;Eik 12 1100-600;;Eiken paneel Kwaliteit A 1100x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7946;Decotrap;PANELEN;Eik 12 1200-710;Decotrap;Eik 12 1200-710;;Eiken paneel Kwaliteit A 1200x710x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7947;Decotrap;PANELEN;Eik 12 1300-600;Decotrap;Eik 12 1300-600;;Eiken paneel Kwaliteit A 1300x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7943;Decotrap;PANELEN;Eik 12 1300-730;Decotrap;Eik 12 1300-730;;Eiken paneel Kwaliteit A 1300x730x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7948;Decotrap;PANELEN;Eik 12 1800-600;Decotrap;Eik 12 1800-600;;Eiken paneel Kwaliteit A 1800x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7949;Decotrap;PANELEN;Eik 12 2100-1000;Decotrap;Eik 12 2100-1000;;Eiken paneel Kwaliteit A 2100x1000x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7950;Decotrap;PANELEN;Eik 12 800-600;Decotrap;Eik 12 800-600;;Eiken paneel Kwaliteit A 800x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7951;Decotrap;PANELEN;Eik 12 900-600;Decotrap;Eik 12 900-600;;Eiken paneel Kwaliteit A 900x600x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7952;Decotrap;PANELEN;Eik 12 900-730;Decotrap;Eik 12 900-730;;Eiken paneel Kwaliteit A 900x730x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7953;Decotrap;PANELEN;Eik 12 950-710;Decotrap;Eik 12 950-710;;Eiken paneel Kwaliteit A 950x710x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7954;Decotrap;PANELEN;Eik 12 950-730;Decotrap;Eik 12 950-730;;Eiken paneel Kwaliteit A 950x730x12mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7955;Decotrap;PANELEN;Eik 20 1000-530;Decotrap;Eik 20 1000-530;;Eiken paneel Kwaliteit A 1000x530x20mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7956;Decotrap;PANELEN;Eik 20 1000-65;Decotrap;Eik 20 1000-65;;Trapneus eik 1000x65x20mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7968;Decotrap;PANELEN;Eik 20 900-530;Decotrap;Eik 20 900-530;;Eiken paneel Kwaliteit A 900x530x20mm;1;20;530;900;0,477; € 91,00 ; € 127,40 ; € 43,41 ; € 60,77 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7969;Decotrap;PANELEN;Eik 20 950-530;Decotrap;Eik 20 950-530;;Eiken paneel Kwaliteit A 950x530x20mm;1;20;530;950;0,5035; € 95,50 ; € 133,70 ; € 48,08 ; € 67,32 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7970;Decotrap;PANELEN;Eik 20 950-750;Decotrap;Eik 20 950-750;;Eiken paneel Kwaliteit A 950x750x40mm;1;20;750;950;0,7125; € 95,50 ; € 133,70 ; € 68,04 ; € 95,26 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7957;Decotrap;PANELEN;Eik 20 1100-530;Decotrap;Eik 20 1100-530;;Eiken paneel Kwaliteit A 1100x530x20mm;1;20;530;1100;0,583; € 95,50 ; € 133,70 ; € 55,68 ; € 77,95 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7958;Decotrap;PANELEN;Eik 20 1200-530;Decotrap;Eik 20 1200-530;;Eiken paneel Kwaliteit A 1200x530x20mm;1;20;530;1200;0,636; € 95,50 ; € 133,70 ; € 60,74 ; € 85,03 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7959;Decotrap;PANELEN;Eik 20 1300-530;Decotrap;Eik 20 1300-530;;Eiken paneel Kwaliteit A 1300x530x20mm;1;20;530;1300;0,689; € 95,50 ; € 133,70 ; € 65,80 ; € 92,12 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7960;Decotrap;PANELEN;Eik 20 1400-450;Decotrap;Eik 20 1400-450;;Eiken paneel Kwaliteit A 1400x450x20mm;1;20;450;1400;0,63; € 95,50 ; € 133,70 ; € 60,17 ; € 84,23 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7961;Decotrap;PANELEN;Eik 20 1400-600;Decotrap;Eik 20 1400-600;;Eiken paneel Kwaliteit A 1400x600x20mm;1;20;600;1400;0,84; € 95,50 ; € 133,70 ; € 80,22 ; € 112,31 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7962;Decotrap;PANELEN;Eik 20 1400-650;Decotrap;Eik 20 1400-650;;Eiken paneel Kwaliteit A 1400x650x20mm;1;20;650;1400;0,91; € 95,50 ; € 133,70 ; € 86,91 ; € 121,67 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7964;Decotrap;PANELEN;Eik 20 1600-65;Decotrap;Eik 20 1600-65;;Trapneus eik 1600x65x20mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7996;Decotrap;PANELEN;Eik 20 1600-1000;Decotrap;Eik 20 1600-1000;;Eiken paneel Kwaliteit A 1600x1000x20mm;1;20;1000;1600;1,6; € 99,50 ; € 139,30 ; € 159,20 ; € 222,88 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7966;Decotrap;PANELEN;Eik 20 1700-65;Decotrap;Eik 20 1700-65;;Trapneus eik 1700x65x20mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7963;Decotrap;PANELEN;Eik 20 1600-450;Decotrap;Eik 20 1600-450;;Eiken paneel Kwaliteit A 1600x450x20mm;1;20;450;1600;0,72; € 99,50 ; € 139,30 ; € 71,64 ; € 100,30 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7995;Decotrap;PANELEN;Eik 20 1600-530;Decotrap;Eik 20 1600-530;;Eiken paneel Kwaliteit A 1600x530x20mm;1;20;530;1600;0,848; € 99,50 ; € 139,30 ; € 84,38 ; € 118,13 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7965;Decotrap;PANELEN;Eik 20 1600-650;Decotrap;Eik 20 1600-650;;Eiken paneel Kwaliteit A 1600x650x20mm;1;20;650;1600;1,04; € 99,50 ; € 139,30 ; € 103,48 ; € 144,87 ;40%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7967;Decotrap;PANELEN;Eik 20 2200-1000;Decotrap;Eik 20 2200-1000;;Eiken paneel Kwaliteit A 2200x1000x20mm;1;20;1000;2200;2,2; € 111,00 ; € 147,00 ; € 244,20 ; € 323,40 ;32%;;;;;;;;;;;;;;;;;;;;;;;;;;
+7971;Decotrap;PANELEN;Eik 30 1000-600;Decotrap;Eik 30 1000-600;;Eiken paneel Kwaliteit A 1000x600x30mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7972;Decotrap;PANELEN;Eik 30 1100-600;Decotrap;Eik 30 1100-600;;Eiken paneel Kwaliteit A 1100x600x30mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7973;Decotrap;PANELEN;Eik 30 1200-600;Decotrap;Eik 30 1200-600;;Eiken paneel Kwaliteit A 1200x600x30mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7974;Decotrap;PANELEN;Eik 30 1600-1000;Decotrap;Eik 30 1600-1000;;Eiken paneel Kwaliteit A 1600x1000x30mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7975;Decotrap;PANELEN;Eik 30 2500-1000;Decotrap;Eik 30 2500-1000;;Eiken paneel Kwaliteit A 2500x1000x30mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7976;Decotrap;PANELEN;Eik 40 1000-530;Decotrap;Eik 40 1000-530;;Eiken paneel Kwaliteit A 1000x530x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7977;Decotrap;PANELEN;Eik 40 1000-600;Decotrap;Eik 40 1000-600;;Eiken paneel Kwaliteit A 1000x600x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7978;Decotrap;PANELEN;Eik 40 1100-530;Decotrap;Eik 40 1100-530;;Eiken paneel Kwaliteit A 1100x530x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7979;Decotrap;PANELEN;Eik 40 1200-530;Decotrap;Eik 40 1200-530;;Eiken paneel Kwaliteit A 1200x530x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7980;Decotrap;PANELEN;Eik 40 1400-1000;Decotrap;Eik 40 1400-1000;;Eiken paneel Kwaliteit A 1400x1000x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7981;Decotrap;PANELEN;Eik 40 1600-1000;Decotrap;Eik 40 1600-1000;;Eiken paneel Kwaliteit A 1600x1000x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7982;Decotrap;PANELEN;Eik 40 1800-1000;Decotrap;Eik 40 1800-1000;;Eiken paneel Kwaliteit A 1800x1000x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7983;Decotrap;PANELEN;Eik 40 2000-1100;Decotrap;Eik 40 2000-1100;;Eiken paneel Kwaliteit A 2000x1100x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7984;Decotrap;PANELEN;Eik 40 2200-1000;Decotrap;Eik 40 2200-1000;;Eiken paneel Kwaliteit A 2200x1000x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
+7985;Decotrap;PANELEN;Eik 40 950-530;Decotrap;Eik 40 950-530;;Eiken paneel Kwaliteit A 950x530x40mm;1;;;0;0;BTW-21;;;0.0000;;0;0;0;0;0;0;0;0;;;;;;;;;;;;;;;simple;;;STK
