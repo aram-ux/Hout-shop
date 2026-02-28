@@ -67,7 +67,7 @@ export default async function HomePage({
     <>
       <HeroSection homePageData={homePageData} />
       <TrustSection homePageData={homePageData} />
-      <FeaturedProducts products={products} />
+      <FeaturedProducts products={products} homePageData={homePageData} />
       <AboutPreview homePageData={homePageData} />
     </>
   );

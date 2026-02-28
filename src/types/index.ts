@@ -111,15 +111,68 @@ export interface HomePage {
   heroImage?: SanityImage;
   heroAccentImage?: SanityImage;
   heroTagline?: LocalizedString;
+  heroTitle?: LocalizedString;
+  heroSubtitle?: LocalizedString;
+  heroCta?: LocalizedString;
+  heroSecondaryCta?: LocalizedString;
   aboutImage?: SanityImage;
+  aboutPreviewTitle?: LocalizedString;
+  aboutPreviewSubtitle?: LocalizedString;
+  aboutPreviewDescription?: LocalizedString;
+  aboutPreviewCta?: LocalizedString;
+  featuredTitle?: LocalizedString;
+  featuredSubtitle?: LocalizedString;
   featuredBanner?: SanityImage;
+  trustItems?: {
+    icon?: string;
+    title?: LocalizedString;
+    description?: LocalizedString;
+  }[];
   trustBadges?: (SanityImage & { label?: LocalizedString })[];
 }
 
 export interface AboutPage {
+  pageTitle?: LocalizedString;
+  pageSubtitle?: LocalizedString;
+  pageDescription?: LocalizedString;
+  storyTitle?: LocalizedString;
+  storyText?: LocalizedString;
   storyImage?: SanityImage;
+  values?: {
+    icon?: string;
+    title?: LocalizedString;
+    description?: LocalizedString;
+  }[];
+  qualityTitle?: LocalizedString;
+  qualityText?: LocalizedString;
+  sustainableTitle?: LocalizedString;
+  sustainableText?: LocalizedString;
   gallery?: (SanityImage & { caption?: LocalizedString })[];
   teamPhoto?: SanityImage;
+}
+
+export interface ContactPage {
+  pageTitle?: LocalizedString;
+  pageDescription?: LocalizedString;
+  heroImage?: SanityImage;
+  address?: {
+    street?: string;
+    city?: string;
+    postalCode?: string;
+    country?: string;
+  };
+  phone?: string;
+  email?: string;
+  openingHours?: LocalizedString;
+  googleMapsEmbed?: string;
+  formSuccessMessage?: LocalizedString;
+}
+
+export interface ProductsPage {
+  pageTitle?: LocalizedString;
+  pageSubtitle?: LocalizedString;
+  heroBanner?: SanityImage;
+  emptyStateMessage?: LocalizedString;
 }
 
 // ---- Cart Types ----

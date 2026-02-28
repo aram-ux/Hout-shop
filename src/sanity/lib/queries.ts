@@ -164,8 +164,23 @@ export const homePageQuery = groq`
     heroImage,
     heroAccentImage,
     heroTagline,
+    heroTitle,
+    heroSubtitle,
+    heroCta,
+    heroSecondaryCta,
     aboutImage,
+    aboutPreviewTitle,
+    aboutPreviewSubtitle,
+    aboutPreviewDescription,
+    aboutPreviewCta,
+    featuredTitle,
+    featuredSubtitle,
     featuredBanner,
+    trustItems[]{
+      icon,
+      title,
+      description
+    },
     trustBadges
   }
 `;
@@ -174,9 +189,50 @@ export const homePageQuery = groq`
 
 export const aboutPageQuery = groq`
   *[_type == "aboutPage"][0] {
+    pageTitle,
+    pageSubtitle,
+    pageDescription,
+    storyTitle,
+    storyText,
     storyImage,
+    values[]{
+      icon,
+      title,
+      description
+    },
+    qualityTitle,
+    qualityText,
+    sustainableTitle,
+    sustainableText,
     gallery,
     teamPhoto
+  }
+`;
+
+// ---- Contact Page Query ----
+
+export const contactPageQuery = groq`
+  *[_type == "contactPage"][0] {
+    pageTitle,
+    pageDescription,
+    heroImage,
+    address,
+    phone,
+    email,
+    openingHours,
+    googleMapsEmbed,
+    formSuccessMessage
+  }
+`;
+
+// ---- Products Page Query ----
+
+export const productsPageQuery = groq`
+  *[_type == "productsPage"][0] {
+    pageTitle,
+    pageSubtitle,
+    heroBanner,
+    emptyStateMessage
   }
 `;
 

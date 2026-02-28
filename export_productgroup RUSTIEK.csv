@@ -1,22 +1,44 @@
-﻿product_id;accountancy;group1;mancode;brand;itemnumber;barcode;description;active;Dikte;Breedte;Lengte;m²;€/m² AKP;€/m² VKP;AKP €/stk;VKP €/stk;Marge
-;Decotrap;PANELEN RUSTIEK;Eik 20 450-530 R;Decotrap;Eik 20 450-530 R;;Eiken paneel Rustiek 450x530x20mm;1;20;530;450;0,2385; € 69,00 ; € 96,60 ; € 16,46 ; € 23,04 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 475-530 R;Decotrap;Eik 20 475-530 R;;Eiken paneel Rustiek 475x530x20mm;1;20;530;475;0,2518; € 69,00 ; € 96,60 ; € 17,37 ; € 24,32 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 475-750 R;Decotrap;Eik 20 475-750 R;;Eiken paneel Rustiek 475x750x40mm;1;20;750;475;0,3563; € 69,00 ; € 96,60 ; € 24,58 ; € 34,42 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 550-530 R;Decotrap;Eik 20 550-530 R;;Eiken paneel Rustiek 550x530x20mm;1;20;530;550;0,2915; € 69,00 ; € 96,60 ; € 20,11 ; € 28,16 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 700-450 R;Decotrap;Eik 20 700-450 R;;Eiken paneel Rustiek 700x450x20mm;1;20;450;700;0,315; € 69,00 ; € 96,60 ; € 21,74 ; € 30,43 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 800-1000 R;Decotrap;Eik 20 800-1000 R;;Eiken paneel Rustiek 800x1000x20mm;1;20;1000;800;0,8; € 69,00 ; € 96,60 ; € 55,20 ; € 77,28 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1100-1000 R;Decotrap;Eik 20 1100-1000 R;;Eiken paneel Rustiek 1100x1000x20mm;1;20;1000;1100;1,1; € 69,00 ; € 96,60 ; € 75,90 ; € 106,26 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 900-530 R;Decotrap;Eik 20 900-530 R;;Eiken paneel Rustiek 900x530x20mm;1;20;530;900;0,477; € 69,00 ; € 96,60 ; € 43,41 ; € 60,77 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 950-530 R;Decotrap;Eik 20 950-530 R;;Eiken paneel Rustiek 950x530x20mm;1;20;530;950;0,5035; € 69,00 ; € 96,60 ; € 48,08 ; € 67,32 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 950-750 R;Decotrap;Eik 20 950-750 R;;Eiken paneel Rustiek 950x750x40mm;1;20;750;950;0,7125; € 69,00 ; € 96,60 ; € 68,04 ; € 95,26 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1100-530 R;Decotrap;Eik 20 1100-530 R;;Eiken paneel Rustiek 1100x530x20mm;1;20;530;1100;0,583; € 69,00 ; € 96,60 ; € 55,68 ; € 77,95 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1200-530 R;Decotrap;Eik 20 1200-530 R;;Eiken paneel Rustiek 1200x530x20mm;1;20;530;1200;0,636; € 69,00 ; € 96,60 ; € 60,74 ; € 85,03 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1300-530 R;Decotrap;Eik 20 1300-530 R;;Eiken paneel Rustiek 1300x530x20mm;1;20;530;1300;0,689; € 69,00 ; € 96,60 ; € 65,80 ; € 92,12 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1400-450 R;Decotrap;Eik 20 1400-450 R;;Eiken paneel Rustiek 1400x450x20mm;1;20;450;1400;0,63; € 69,00 ; € 96,60 ; € 60,17 ; € 84,23 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1400-600 R;Decotrap;Eik 20 1400-600 R;;Eiken paneel Rustiek 1400x600x20mm;1;20;600;1400;0,84; € 69,00 ; € 96,60 ; € 80,22 ; € 112,31 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1400-650 R;Decotrap;Eik 20 1400-650 R;;Eiken paneel Rustiek 1400x650x20mm;1;20;650;1400;0,91; € 69,00 ; € 96,60 ; € 86,91 ; € 121,67 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1600-1000 R;Decotrap;Eik 20 1600-1000 R;;Eiken paneel Rustiek 1600x1000x20mm;1;20;1000;1600;1,6; € 71,00 ; € 99,40 ; € 159,20 ; € 222,88 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1600-450 R;Decotrap;Eik 20 1600-450 R;;Eiken paneel Rustiek 1600x450x20mm;1;20;450;1600;0,72; € 71,00 ; € 99,40 ; € 71,64 ; € 100,30 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1600-530 R;Decotrap;Eik 20 1600-530 R;;Eiken paneel Rustiek 1600x530x20mm;1;20;530;1600;0,848; € 71,00 ; € 99,40 ; € 84,38 ; € 118,13 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 1600-650 R;Decotrap;Eik 20 1600-650 R;;Eiken paneel Rustiek 1600x650x20mm;1;20;650;1600;1,04; € 71,00 ; € 99,40 ; € 103,48 ; € 144,87 ;40%
-;Decotrap;PANELEN RUSTIEK;Eik 20 2200-1000 R;Decotrap;Eik 20 2200-1000 R;;Eiken paneel Rustiek 2200x1000x20mm;1;20;1000;2200;2,2; € 73,00 ; € 102,20 ; € 244,20 ; € 323,40 ;32%
+﻿product_id;accountancy;group1;mancode;brand;itemnumber;barcode;description;active;Dikte;Breedte;Lengte;m²;€/m² AKP;€/m² VKP (40%);€/m² VKP (50%);AKP €/stk;VKP €/stk (40%);VKP €/stk (50%);VKP m² LIC (22 mm);VKP LIC (stk)
+;Decotrap;PANELEN;Eik 20 450-530;Decotrap;Eik 20 450-530;;Eiken paneel Kwaliteit A 450x530x20mm;6;20;530;450;0,2385; € 91,00 ; € 127,40 ; € 136,50 ; € 21,70 ; € 30,38 ; € 32,56 ;170,48; € 40,66 
+;Decotrap;PANELEN;Eik 20 475-530;Decotrap;Eik 20 475-530;;Eiken paneel Kwaliteit A 475x530x20mm;5;20;530;475;0,2518; € 95,50 ; € 139,30 ; € 143,25 ; € 24,05 ; € 35,08 ; € 36,07 ;170,48; € 42,93 
+;Decotrap;PANELEN;Eik 20 475-750;Decotrap;Eik 20 475-750;;Eiken paneel Kwaliteit A 475x750x40mm;4;20;750;475;0,3563; € 95,50 ; € 139,30 ; € 143,25 ; € 34,03 ; € 49,63 ; € 51,04 ;170,48; € 60,74 
+;Decotrap;PANELEN;Eik 20 550-530;Decotrap;Eik 20 550-530;;Eiken paneel Kwaliteit A 550x530x20mm;3;20;530;550;0,2915; € 95,50 ; € 139,30 ; € 143,25 ; € 27,84 ; € 40,61 ; € 41,76 ;170,48; € 49,69 
+;Decotrap;PANELEN;Eik 20 700-450;Decotrap;Eik 20 700-450;;Eiken paneel Kwaliteit A 700x450x20mm;2;20;450;700;0,315; € 95,50 ; € 139,30 ; € 143,25 ; € 30,08 ; € 43,88 ; € 45,12 ;170,48; € 53,70 
+;Decotrap;PANELEN;Eik 20 800-1000;Decotrap;Eik 20 800-1000;;Eiken paneel Kwaliteit A 800x1000x20mm;1;20;1000;800;0,8; € 99,50 ; € 139,30 ; € 149,25 ; € 79,60 ; € 111,44 ; € 119,40 ;170,48; € 136,38 
+;Decotrap;PANELEN;Eik 20 1100-1000;Decotrap;Eik 20 1100-1000;;Eiken paneel Kwaliteit A 1100x1000x20mm;0;20;1000;1100;1,1; € 111,00 ; € 147,00 ; € 166,50 ; € 122,10 ; € 161,70 ; € 183,15 ;170,48; € 187,53 
+;Decotrap;PANELEN;Eik 20 900-530;Decotrap;Eik 20 900-530;;Eiken paneel Kwaliteit A 900x530x20mm;1;20;530;900;0,477; € 91,00 ; € 127,40 ; € 136,50 ; € 43,41 ; € 60,77 ; € 65,11 ;170,48; € 81,32 
+;Decotrap;PANELEN;Eik 20 950-530;Decotrap;Eik 20 950-530;;Eiken paneel Kwaliteit A 950x530x20mm;1;20;530;950;0,5035; € 95,50 ; € 133,70 ; € 143,25 ; € 48,08 ; € 67,32 ; € 72,13 ;170,48; € 85,84 
+;Decotrap;PANELEN;Eik 20 950-750;Decotrap;Eik 20 950-750;;Eiken paneel Kwaliteit A 950x750x40mm;1;20;750;950;0,7125; € 95,50 ; € 133,70 ; € 143,25 ; € 68,04 ; € 95,26 ; € 102,07 ;170,48; € 121,47 
+;Decotrap;PANELEN;Eik 20 1100-530;Decotrap;Eik 20 1100-530;;Eiken paneel Kwaliteit A 1100x530x20mm;1;20;530;1100;0,583; € 95,50 ; € 133,70 ; € 143,25 ; € 55,68 ; € 77,95 ; € 83,51 ;170,48; € 99,39 
+;Decotrap;PANELEN;Eik 20 1200-530;Decotrap;Eik 20 1200-530;;Eiken paneel Kwaliteit A 1200x530x20mm;1;20;530;1200;0,636; € 95,50 ; € 133,70 ; € 143,25 ; € 60,74 ; € 85,03 ; € 91,11 ;170,48; € 108,43 
+;Decotrap;PANELEN;Eik 20 1300-530;Decotrap;Eik 20 1300-530;;Eiken paneel Kwaliteit A 1300x530x20mm;1;20;530;1300;0,689; € 95,50 ; € 133,70 ; € 143,25 ; € 65,80 ; € 92,12 ; € 98,70 ;170,48; € 117,46 
+;Decotrap;PANELEN;Eik 20 1400-450;Decotrap;Eik 20 1400-450;;Eiken paneel Kwaliteit A 1400x450x20mm;1;20;450;1400;0,63; € 95,50 ; € 133,70 ; € 143,25 ; € 60,17 ; € 84,23 ; € 90,25 ;170,48; € 107,40 
+;Decotrap;PANELEN;Eik 20 1400-600;Decotrap;Eik 20 1400-600;;Eiken paneel Kwaliteit A 1400x600x20mm;1;20;600;1400;0,84; € 95,50 ; € 133,70 ; € 143,25 ; € 80,22 ; € 112,31 ; € 120,33 ;170,48; € 143,20 
+;Decotrap;PANELEN;Eik 20 1400-650;Decotrap;Eik 20 1400-650;;Eiken paneel Kwaliteit A 1400x650x20mm;1;20;650;1400;0,91; € 95,50 ; € 133,70 ; € 143,25 ; € 86,91 ; € 121,67 ; € 130,36 ;170,48; € 155,14 
+;Decotrap;PANELEN;Eik 20 1600-1000;Decotrap;Eik 20 1600-1000;;Eiken paneel Kwaliteit A 1600x1000x20mm;1;20;1000;1600;1,6; € 99,50 ; € 139,30 ; € 149,25 ; € 159,20 ; € 222,88 ; € 238,80 ;170,48; € 272,77 
+;Decotrap;PANELEN;Eik 20 1600-450;Decotrap;Eik 20 1600-450;;Eiken paneel Kwaliteit A 1600x450x20mm;1;20;450;1600;0,72; € 99,50 ; € 139,30 ; € 149,25 ; € 71,64 ; € 100,30 ; € 107,46 ;170,48; € 122,75 
+;Decotrap;PANELEN;Eik 20 1600-530;Decotrap;Eik 20 1600-530;;Eiken paneel Kwaliteit A 1600x530x20mm;1;20;530;1600;0,848; € 99,50 ; € 139,30 ; € 149,25 ; € 84,38 ; € 118,13 ; € 126,56 ;170,48; € 144,57 
+;Decotrap;PANELEN;Eik 20 1600-650;Decotrap;Eik 20 1600-650;;Eiken paneel Kwaliteit A 1600x650x20mm;1;20;650;1600;1,04; € 99,50 ; € 139,30 ; € 149,25 ; € 103,48 ; € 144,87 ; € 155,22 ;170,48; € 177,30 
+;Decotrap;PANELEN;Eik 20 2200-1000;Decotrap;Eik 20 2200-1000;;Eiken paneel Kwaliteit A 2200x1000x20mm;1;20;1000;2200;2,2; € 111,00 ; € 147,00 ; € 166,50 ; € 244,20 ; € 323,40 ; € 366,30 ;170,48; € 375,06 
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;

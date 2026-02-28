@@ -1,10 +1,11 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { client } from "@/sanity/lib/client";
-import { allProductsQuery, allCategoriesQuery } from "@/sanity/lib/queries";
+import { allProductsQuery, allCategoriesQuery, productsPageQuery } from "@/sanity/lib/queries";
 import Container from "@/components/ui/Container";
 import ProductGrid from "@/components/products/ProductGrid";
 import { buildAlternates, buildOpenGraph, SITE_NAME } from "@/lib/seo";
-import type { Product, Category } from "@/types";
+import { getLocalizedValue } from "@/types";
+import type { Product, Category, ProductsPage as ProductsPageType } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import type { Metadata } from "next";
 
@@ -49,17 +50,20 @@ export default async function ProductsPage({
 
   let products: Product[] = [];
   let categories: Category[] = [];
+  let pageData: ProductsPageType | null = null;
 
   try {
-    [products, categories] = await Promise.all([
+    [products, categories, pageData] = await Promise.all([
       client.fetch(allProductsQuery),
       client.fetch(allCategoriesQuery),
+      client.fetch(productsPageQuery),
     ]);
   } catch {
     // Sanity not configured yet
   }
 
   const t = await getTranslations({ locale, namespace: "products" });
+  const l = locale as Locale;
 
   return (
     <section className="py-12 lg:py-16">
@@ -67,9 +71,11 @@ export default async function ProductsPage({
         {/* Page Header */}
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-oak-800 mb-4 font-[family-name:var(--font-heading)]">
-            {t("title")}
+            {getLocalizedValue(pageData?.pageTitle, l) || t("title")}
           </h1>
-          <p className="text-lg text-oak-500 max-w-2xl">{t("subtitle")}</p>
+          <p className="text-lg text-oak-500 max-w-2xl">
+            {getLocalizedValue(pageData?.pageSubtitle, l) || t("subtitle")}
+          </p>
         </div>
 
         {/* Products */}

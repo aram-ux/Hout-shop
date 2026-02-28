@@ -82,19 +82,19 @@ export default function HeroSection({ homePageData }: HeroSectionProps) {
 
             {/* Main heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6 font-[family-name:var(--font-heading)]">
-              {t("title")}
+              {getLocalizedValue(homePageData?.heroTitle, locale) || t("title")}
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-oak-300 leading-relaxed mb-10 max-w-2xl">
-              {t("subtitle")}
+              {getLocalizedValue(homePageData?.heroSubtitle, locale) || t("subtitle")}
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href={getProductsPath()}>
                 <Button variant="gold" size="lg">
-                  {t("cta")}
+                  {getLocalizedValue(homePageData?.heroCta, locale) || t("cta")}
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
@@ -102,10 +102,10 @@ export default function HeroSection({ homePageData }: HeroSectionProps) {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-oak-600 text-oak-200 hover:bg-oak-700 hover:border-oak-500"
+                  className="border-gold/60 text-gold hover:bg-gold/10 hover:border-gold"
                 >
                   <Ruler className="w-5 h-5" />
-                  {t("secondaryCta")}
+                  {getLocalizedValue(homePageData?.heroSecondaryCta, locale) || t("secondaryCta")}
                 </Button>
               </Link>
             </div>

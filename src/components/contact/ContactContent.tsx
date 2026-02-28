@@ -1,14 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { getLocalizedValue } from "@/types";
+import type { ContactPage } from "@/types";
+import type { Locale } from "@/i18n/routing";
 
-export default function ContactContent() {
+interface ContactContentProps {
+  contactData?: ContactPage | null;
+}
+
+export default function ContactContent({ contactData }: ContactContentProps) {
   const t = useTranslations("contact");
   const tc = useTranslations("common");
+  const locale = useLocale() as Locale;
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -31,9 +39,11 @@ export default function ContactContent() {
         {/* Header */}
         <div className="max-w-3xl mb-12">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-oak-800 mb-4 font-[family-name:var(--font-heading)]">
-            {t("title")}
+            {getLocalizedValue(contactData?.pageTitle, locale) || t("title")}
           </h1>
-          <p className="text-lg text-oak-500">{t("description")}</p>
+          <p className="text-lg text-oak-500">
+            {getLocalizedValue(contactData?.pageDescription, locale) || t("description")}
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
@@ -114,11 +124,12 @@ export default function ContactContent() {
                       {t("info.address")}
                     </h4>
                     <p className="text-oak-500 text-sm mt-0.5">
-                      Voorbeeld Straat 123
+                      {contactData?.address?.street || "Voorbeeld Straat 123"}
                       <br />
-                      3000 Leuven
+                      {contactData?.address?.postalCode || "3000"}{" "}
+                      {contactData?.address?.city || "Leuven"}
                       <br />
-                      België
+                      {contactData?.address?.country || "België"}
                     </p>
                   </div>
                 </div>
@@ -132,10 +143,10 @@ export default function ContactContent() {
                       {t("info.phone")}
                     </h4>
                     <a
-                      href="tel:+3200000000"
+                      href={`tel:${contactData?.phone || "+3200000000"}`}
                       className="text-oak-500 text-sm mt-0.5 hover:text-gold-dark transition-colors"
                     >
-                      +32 (0)00 00 00 00
+                      {contactData?.phone || "+32 (0)00 00 00 00"}
                     </a>
                   </div>
                 </div>
@@ -149,10 +160,10 @@ export default function ContactContent() {
                       {t("info.email")}
                     </h4>
                     <a
-                      href="mailto:info@hout-shop.com"
+                      href={`mailto:${contactData?.email || "info@hout-shop.com"}`}
                       className="text-oak-500 text-sm mt-0.5 hover:text-gold-dark transition-colors"
                     >
-                      info@hout-shop.com
+                      {contactData?.email || "info@hout-shop.com"}
                     </a>
                   </div>
                 </div>
@@ -166,22 +177,37 @@ export default function ContactContent() {
                       {t("info.hours")}
                     </h4>
                     <p className="text-oak-500 text-sm mt-0.5">
-                      {t("info.hoursValue")}
+                      {getLocalizedValue(contactData?.openingHours, locale) || t("info.hoursValue")}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-oak-100 rounded-xl h-64 flex items-center justify-center border border-oak-200">
-              <div className="text-center">
-                <MapPin className="w-8 h-8 text-oak-400 mx-auto mb-2" />
-                <p className="text-oak-400 text-sm">
-                  Google Maps integration
-                </p>
+            {/* Map */}
+            {contactData?.googleMapsEmbed ? (
+              <div className="rounded-xl h-64 overflow-hidden border border-oak-200">
+                <iframe
+                  src={contactData.googleMapsEmbed}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps"
+                />
               </div>
-            </div>
+            ) : (
+              <div className="bg-oak-100 rounded-xl h-64 flex items-center justify-center border border-oak-200">
+                <div className="text-center">
+                  <MapPin className="w-8 h-8 text-oak-400 mx-auto mb-2" />
+                  <p className="text-oak-400 text-sm">
+                    Google Maps integration
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </Container>

@@ -2,12 +2,24 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import { Truck, Shield, Headphones, Lock } from "lucide-react";
+import { Truck, Shield, Headphones, Lock, Award, Leaf, Heart, Star } from "lucide-react";
 import Container from "../ui/Container";
 import { urlFor } from "@/sanity/lib/image";
 import { getLocalizedValue } from "@/types";
 import type { HomePage } from "@/types";
 import type { Locale } from "@/i18n/routing";
+import type { LucideIcon } from "lucide-react";
+
+const iconMap: Record<string, LucideIcon> = {
+  truck: Truck,
+  shield: Shield,
+  headphones: Headphones,
+  lock: Lock,
+  award: Award,
+  leaf: Leaf,
+  heart: Heart,
+  star: Star,
+};
 
 interface TrustSectionProps {
   homePageData?: HomePage | null;
@@ -17,7 +29,11 @@ export default function TrustSection({ homePageData }: TrustSectionProps) {
   const t = useTranslations("trust");
   const locale = useLocale() as Locale;
 
-  const features = [
+  // Use CMS trust items if available, otherwise fall back to translation-based items
+  const cmsItems = homePageData?.trustItems;
+  const hasCmsItems = cmsItems && cmsItems.length > 0;
+
+  const defaultFeatures = [
     {
       icon: Truck,
       title: t("freeShipping"),
@@ -44,21 +60,40 @@ export default function TrustSection({ homePageData }: TrustSectionProps) {
     <section className="py-12 bg-oak-100 border-y border-oak-200">
       <Container>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
-                <feature.icon className="w-5 h-5 text-gold-dark" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-oak-800 text-sm">
-                  {feature.title}
-                </h3>
-                <p className="text-oak-500 text-xs mt-0.5">
-                  {feature.description}
-                </p>
-              </div>
-            </div>
-          ))}
+          {hasCmsItems
+            ? cmsItems.map((item, index) => {
+                const IconComp = iconMap[item.icon || "shield"] || Shield;
+                return (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
+                      <IconComp className="w-5 h-5 text-gold-dark" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-oak-800 text-sm">
+                        {getLocalizedValue(item.title, locale)}
+                      </h3>
+                      <p className="text-oak-500 text-xs mt-0.5">
+                        {getLocalizedValue(item.description, locale)}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })
+            : defaultFeatures.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
+                    <feature.icon className="w-5 h-5 text-gold-dark" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-oak-800 text-sm">
+                      {feature.title}
+                    </h3>
+                    <p className="text-oak-500 text-xs mt-0.5">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
         </div>
 
         {/* Trust Badges / Certification Logos */}

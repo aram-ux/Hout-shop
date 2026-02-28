@@ -1,8 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import ContactContent from "@/components/contact/ContactContent";
+import { client } from "@/sanity/lib/client";
+import { contactPageQuery } from "@/sanity/lib/queries";
 import { buildAlternates, buildOpenGraph, SITE_NAME } from "@/lib/seo";
+import type { ContactPage as ContactPageType } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import type { Metadata } from "next";
+
+export const revalidate = 60;
 
 const contactPaths: Record<Locale, string> = {
   nl: "/contact",
@@ -41,5 +46,12 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ContactContent />;
+  let contactData: ContactPageType | null = null;
+  try {
+    contactData = await client.fetch(contactPageQuery);
+  } catch {
+    // Sanity not configured yet
+  }
+
+  return <ContactContent contactData={contactData} />;
 }

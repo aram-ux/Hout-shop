@@ -55,6 +55,23 @@ export default defineConfig({
                   .title("About Page")
               ),
             S.listItem()
+              .title("Products Page")
+              .child(
+                S.document()
+                  .schemaType("productsPage")
+                  .documentId("productsPage")
+                  .title("Products Page")
+              ),
+            S.listItem()
+              .title("Contact Page")
+              .child(
+                S.document()
+                  .schemaType("contactPage")
+                  .documentId("contactPage")
+                  .title("Contact Page")
+              ),
+            S.divider(),
+            S.listItem()
               .title("Site Settings")
               .child(
                 S.document()

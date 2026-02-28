@@ -6,14 +6,16 @@ import { ArrowRight } from "lucide-react";
 import Container from "../ui/Container";
 import ProductCard from "../products/ProductCard";
 import Button from "../ui/Button";
-import type { Product } from "@/types";
+import { getLocalizedValue } from "@/types";
+import type { Product, HomePage } from "@/types";
 import type { Locale } from "@/i18n/routing";
 
 interface FeaturedProductsProps {
   products: Product[];
+  homePageData?: HomePage | null;
 }
 
-export default function FeaturedProducts({ products }: FeaturedProductsProps) {
+export default function FeaturedProducts({ products, homePageData }: FeaturedProductsProps) {
   const t = useTranslations("featured");
   const tc = useTranslations("common");
   const locale = useLocale() as Locale;
@@ -34,10 +36,10 @@ export default function FeaturedProducts({ products }: FeaturedProductsProps) {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-oak-800 mb-4 font-[family-name:var(--font-heading)]">
-            {t("title")}
+            {getLocalizedValue(homePageData?.featuredTitle, locale) || t("title")}
           </h2>
           <p className="text-lg text-oak-500 max-w-2xl mx-auto">
-            {t("subtitle")}
+            {getLocalizedValue(homePageData?.featuredSubtitle, locale) || t("subtitle")}
           </p>
         </div>
 

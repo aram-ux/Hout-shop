@@ -59,18 +59,18 @@ export default function AboutPreview({ homePageData }: AboutPreviewProps) {
           {/* Left - Text Content */}
           <div>
             <span className="text-gold-dark font-medium text-sm uppercase tracking-wider">
-              {t("subtitle")}
+              {getLocalizedValue(homePageData?.aboutPreviewSubtitle, locale) || t("subtitle")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-oak-800 mt-2 mb-6 font-[family-name:var(--font-heading)]">
-              {t("title")}
+              {getLocalizedValue(homePageData?.aboutPreviewTitle, locale) || t("title")}
             </h2>
             <p className="text-oak-600 leading-relaxed mb-8">
-              {t("description")}
+              {getLocalizedValue(homePageData?.aboutPreviewDescription, locale) || t("description")}
             </p>
 
             <Link href={getAboutPath()}>
               <Button variant="secondary" size="md">
-                {t("story")}
+                {getLocalizedValue(homePageData?.aboutPreviewCta, locale) || t("story")}
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
