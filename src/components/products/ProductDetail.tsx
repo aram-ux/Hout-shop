@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { ShoppingBag, Check, ChevronLeft, ChevronRight } from "lucide-react";
@@ -11,6 +11,7 @@ import CustomDimensionCalculator from "./CustomDimensionCalculator";
 import { urlFor } from "@/sanity/lib/image";
 import { localize, formatPrice } from "@/lib/utils";
 import { useCartStore } from "@/lib/store/cart";
+import { trackViewItem, trackAddToCart } from "@/lib/analytics";
 import type { Product, StandardSize } from "@/types";
 import type { Locale } from "@/i18n/routing";
 
@@ -130,6 +131,20 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
   const title = localize(product.title, locale);
 
+  // Track product view
+  useEffect(() => {
+    const lowestPrice = sizes.length > 0
+      ? sizes.reduce((min, s) => (s.price < min ? s.price : min), sizes[0]?.price || 0)
+      : 0;
+    trackViewItem({
+      id: product._id,
+      name: title || "",
+      category: localize(product.category?.title, locale) || "",
+      price: lowestPrice,
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product._id]);
+
   const handleAddToCart = () => {
     if (!selectedSize) return;
 
@@ -147,6 +162,13 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     });
 
     setAddedToCart(true);
+    trackAddToCart({
+      id: product._id,
+      name: title || "",
+      category: localize(product.category?.title, locale) || "",
+      price: selectedSize.price,
+      quantity,
+    });
     setTimeout(() => setAddedToCart(false), 2000);
   };
 
@@ -455,13 +477,18 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           )}
 
           {/* Specifications */}
-          {product.specifications && product.specifications.length > 0 && (
+          {product.specifications && product.specifications.length > 0 && (() => {
+            const filteredSpecs = product.specifications.filter(
+              (spec) => !spec.label?.nl?.toLowerCase().includes("richtprijs per m")
+            );
+            if (filteredSpecs.length === 0) return null;
+            return (
             <div className="mt-8 pt-8 border-t border-oak-200">
               <h3 className="font-semibold text-oak-800 mb-4">
                 {t("specifications")}
               </h3>
               <dl className="space-y-3">
-                {product.specifications.map((spec) => (
+                {filteredSpecs.map((spec) => (
                   <div
                     key={spec._key}
                     className="flex justify-between text-sm"
@@ -476,7 +503,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 ))}
               </dl>
             </div>
-          )}
+            );
+          })()}
         </div>
       </div>
     </Container>

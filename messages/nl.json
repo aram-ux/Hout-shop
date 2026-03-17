@@ -42,6 +42,7 @@
     "products": "Producten",
     "about": "Over ons",
     "info": "Productinfo",
+    "blog": "Kennisbank",
     "contact": "Contact",
     "cart": "Winkelmand",
     "checkout": "Afrekenen"
@@ -89,6 +90,7 @@
     "sortName": "Naam",
     "sortNewest": "Nieuwste",
     "noProducts": "Geen producten gevonden.",
+    "searchPlaceholder": "Zoek op productnaam, houtsoort, afwerking...",
     "startingFrom": "Vanaf",
     "customAvailable": "Maatwerk mogelijk",
     "specifications": "Specificaties",
@@ -343,6 +345,22 @@
     "support": "Expert advies",
     "supportDesc": "Persoonlijke service",
     "secure": "Veilig betalen",
-    "secureDesc": "iDEAL, Bancontact & meer"
-  }
+    "secureDesc": "iDEAL, Bancontact & meer"  },
+  "blog": {
+    "title": "Kennisbank",
+    "subtitle": "Tips, inspiratie en alles over eikenhout",
+    "readMore": "Lees meer",
+    "publishedOn": "Gepubliceerd op",
+    "by": "door",
+    "noPosts": "Nog geen artikelen gepubliceerd.",
+    "backToBlog": "Terug naar kennisbank",
+    "relatedPosts": "Gerelateerde artikelen",
+    "allPosts": "Alle artikelen"
+  },
+  "newsletter": {
+    "title": "Nieuwsbrief",
+    "description": "Blijf op de hoogte van nieuwe producten en aanbiedingen.",
+    "success": "Bedankt! U bent ingeschreven.",
+    "error": "Er ging iets fout. Probeer het opnieuw.",
+    "placeholder": "Uw e-mailadres"  }
 }

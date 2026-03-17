@@ -42,6 +42,7 @@
     "products": "Products",
     "about": "About",
     "info": "Product Info",
+    "blog": "Blog",
     "contact": "Contact",
     "cart": "Cart",
     "checkout": "Checkout"
@@ -89,6 +90,7 @@
     "sortName": "Name",
     "sortNewest": "Newest",
     "noProducts": "No products found.",
+    "searchPlaceholder": "Search by product name, wood type, finish...",
     "startingFrom": "Starting from",
     "customAvailable": "Custom sizes available",
     "specifications": "Specifications",
@@ -343,6 +345,22 @@
     "support": "Expert advice",
     "supportDesc": "Personal service",
     "secure": "Secure payment",
-    "secureDesc": "iDEAL, Bancontact & more"
-  }
+    "secureDesc": "iDEAL, Bancontact & more"  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips, inspiration and everything about oak wood",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "by": "by",
+    "noPosts": "No articles published yet.",
+    "backToBlog": "Back to blog",
+    "relatedPosts": "Related articles",
+    "allPosts": "All articles"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Stay informed about new products and offers.",
+    "success": "Thank you! You have been subscribed.",
+    "error": "Something went wrong. Please try again.",
+    "placeholder": "Your email address"  }
 }

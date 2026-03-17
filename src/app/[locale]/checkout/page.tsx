@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { ShoppingBag, Lock } from "lucide-react";
@@ -14,6 +14,7 @@ import {
 import { urlFor } from "@/sanity/lib/image";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { trackBeginCheckout } from "@/lib/analytics";
 import type { Locale } from "@/i18n/routing";
 
 export default function CheckoutPage() {
@@ -47,6 +48,22 @@ export default function CheckoutPage() {
   const subtotal = getSubtotal();
   const shipping = calculateShipping(subtotal);
   const total = subtotal + shipping;
+
+  // Track begin_checkout on page load
+  useEffect(() => {
+    if (items.length > 0) {
+      trackBeginCheckout(
+        subtotal,
+        items.map((item) => ({
+          id: item.productId,
+          name: localize(item.productTitle, locale),
+          price: item.unitPrice,
+          quantity: item.quantity,
+        }))
+      );
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

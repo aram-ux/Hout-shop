@@ -66,10 +66,21 @@ function parseDimensionsFromDescription(desc) {
 /** Bepaal producttype uit de description */
 function detectProductType(desc) {
   const lower = desc.toLowerCase();
+  if (lower.includes("vensterbank")) return "vensterbank";
+  if (lower.includes("wandplank")) return "wandplank";
+  if (lower.includes("tafelblad")) return "tafelblad";
+  if (lower.includes("bureaublad")) return "bureaublad";
+  if (lower.includes("traptrede")) return "traptrede";
   if (lower.includes("trapneus")) return "trapneus";
-  if (lower.includes("eiken paneel")) return "paneel";
-  // Voeg hier meer types toe indien nodig
+  if (lower.includes("paneel")) return "paneel";
   return "overig";
+}
+
+/** Bepaal houtsoort uit de description */
+function detectWoodType(desc) {
+  const lower = desc.toLowerCase();
+  if (lower.includes("notelaar")) return "walnut";
+  return "european-oak";
 }
 
 /** Bepaal kwaliteit uit description of group1 kolom */
@@ -147,6 +158,7 @@ for (const row of rows) {
 
   const type = detectProductType(desc);
   const quality = detectQuality(desc, row.group1);
+  const woodType = detectWoodType(desc);
   const activeNum = parseInt(row.active, 10) || 0;
 
   // Probeer VKP stukprijs
@@ -157,6 +169,7 @@ for (const row of rows) {
     dims,
     type,
     quality,
+    woodType,
     activeNum,
     vkpStk,
     vkpM2: parsePrice(row["€/m² VKP"]),
@@ -182,12 +195,13 @@ console.log();
 const groups = new Map();
 
 for (const row of validRows) {
-  const key = `${row.type}-${row.quality}-${row.dims.dikte}mm`;
+  const key = `${row.type}-${row.woodType}-${row.quality}-${row.dims.dikte}mm`;
 
   if (!groups.has(key)) {
     groups.set(key, {
       type: row.type,
       quality: row.quality,
+      woodType: row.woodType,
       dikte: row.dims.dikte,
       sizes: [],
       hasAnyPrice: false,
@@ -216,7 +230,12 @@ for (const row of validRows) {
 
 const CATEGORY_MAP = {
   paneel: "cat-panelen",
-  trapneus: "cat-panelen", // of maak eventueel een aparte categorie
+  trapneus: "cat-panelen",
+  vensterbank: "cat-vensterbanken",
+  wandplank: "cat-wandplanken",
+  tafelblad: "cat-tafelbladen",
+  bureaublad: "cat-bureabladen",
+  traptrede: "cat-traptreden",
 };
 
 const QUALITY_LABELS = {
@@ -224,51 +243,124 @@ const QUALITY_LABELS = {
   "rustiek":     { nl: "Rustiek", fr: "Rustique", en: "Rustic" },
 };
 
-/** Bouw een productnaam per type, kwaliteit en dikte */
-function buildTitle(type, quality, dikte) {
+/** Bouw een productnaam per type, kwaliteit, dikte en houtsoort */
+function buildTitle(type, quality, dikte, woodType) {
   const q = QUALITY_LABELS[quality] || QUALITY_LABELS["kwaliteit-a"];
+  const isWalnut = woodType === "walnut";
+  const woodNl = isWalnut ? "Notelaar" : "Eiken";
+  const woodFr = isWalnut ? "Noyer" : "Chêne";
+  const woodEn = isWalnut ? "Walnut" : "Oak";
+  const qStr = isWalnut ? "" : ` ${q.nl}`;
+  const qStrFr = isWalnut ? "" : ` ${q.fr}`;
+  const qStrEn = isWalnut ? "" : ` ${q.en}`;
+
   switch (type) {
+    case "vensterbank":
+      return {
+        nl: `${woodNl} vensterbank${qStr} – ${dikte}mm`,
+        fr: `Appui de fenêtre en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Window Sill${qStrEn} – ${dikte}mm`,
+      };
+    case "wandplank":
+      return {
+        nl: `${woodNl} wandplank${qStr} – ${dikte}mm`,
+        fr: `Étagère murale en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Wall Shelf${qStrEn} – ${dikte}mm`,
+      };
+    case "tafelblad":
+      return {
+        nl: `${woodNl} tafelblad${qStr} – ${dikte}mm`,
+        fr: `Plateau de table en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Table Top${qStrEn} – ${dikte}mm`,
+      };
+    case "bureaublad":
+      return {
+        nl: `${woodNl} bureaublad${qStr} – ${dikte}mm`,
+        fr: `Plateau de bureau en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Desk Top${qStrEn} – ${dikte}mm`,
+      };
+    case "traptrede":
+      return {
+        nl: `${woodNl} traptrede${qStr} – ${dikte}mm`,
+        fr: `Marche d'escalier en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Stair Tread${qStrEn} – ${dikte}mm`,
+      };
     case "paneel":
       return {
-        nl: `Eiken paneel ${q.nl} – ${dikte}mm`,
-        fr: `Panneau en chêne ${q.fr} – ${dikte}mm`,
-        en: `Oak Panel ${q.en} – ${dikte}mm`,
+        nl: `${woodNl} paneel${qStr} – ${dikte}mm`,
+        fr: `Panneau en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} Panel${qStrEn} – ${dikte}mm`,
       };
     case "trapneus":
       return {
-        nl: `Trapneus eik – ${dikte}mm`,
-        fr: `Nez de marche en chêne – ${dikte}mm`,
-        en: `Oak Stair Nose – ${dikte}mm`,
+        nl: `Trapneus ${woodNl.toLowerCase()} – ${dikte}mm`,
+        fr: `Nez de marche en ${woodFr.toLowerCase()} – ${dikte}mm`,
+        en: `${woodEn} Stair Nose – ${dikte}mm`,
       };
     default:
       return {
-        nl: `Eiken product ${q.nl} – ${dikte}mm`,
-        fr: `Produit en chêne ${q.fr} – ${dikte}mm`,
-        en: `Oak product ${q.en} – ${dikte}mm`,
+        nl: `${woodNl} product${qStr} – ${dikte}mm`,
+        fr: `Produit en ${woodFr.toLowerCase()}${qStrFr} – ${dikte}mm`,
+        en: `${woodEn} product${qStrEn} – ${dikte}mm`,
       };
   }
 }
 
-function buildDescription(type, quality, dikte) {
+function buildDescription(type, quality, dikte, woodType) {
   const q = QUALITY_LABELS[quality] || QUALITY_LABELS["kwaliteit-a"];
+  const isWalnut = woodType === "walnut";
+  const woodNl = isWalnut ? "notelaar" : "eiken";
+  const woodFr = isWalnut ? "noyer" : "chêne";
+  const woodEn = isWalnut ? "walnut" : "oak";
+
   switch (type) {
+    case "vensterbank":
+      return {
+        nl: `Massief ${woodNl} vensterbank, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Op maat gezaagd uit massief paneel. Ideaal als raamdorpel of vensterplank.`,
+        fr: `Appui de fenêtre en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Découpé sur mesure à partir de panneaux massifs.`,
+        en: `Solid ${woodEn} window sill, ${q.en.toLowerCase()}, thickness ${dikte}mm. Cut to size from solid panels. Ideal as a windowsill or window ledge.`,
+      };
+    case "wandplank":
+      return {
+        nl: `Massief ${woodNl} wandplank, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Perfecte zwevende plank voor uw interieur. Kant-en-klaar afgewerkt.`,
+        fr: `Étagère murale en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Parfaite étagère flottante pour votre intérieur.`,
+        en: `Solid ${woodEn} wall shelf, ${q.en.toLowerCase()}, thickness ${dikte}mm. Perfect floating shelf for your interior. Ready finished.`,
+      };
+    case "tafelblad":
+      return {
+        nl: `Massief ${woodNl} tafelblad, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Geschikt als eet- of werktafelblad. Beschikbaar in diverse standaardafmetingen.`,
+        fr: `Plateau de table en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Convient comme plateau de table à manger ou de travail.`,
+        en: `Solid ${woodEn} table top, ${q.en.toLowerCase()}, thickness ${dikte}mm. Suitable as dining or work table top. Available in various standard sizes.`,
+      };
+    case "bureaublad":
+      return {
+        nl: `Massief ${woodNl} bureaublad, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Ideaal voor een bureau of werkblad. Stevig en duurzaam.`,
+        fr: `Plateau de bureau en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Idéal pour un bureau ou plan de travail.`,
+        en: `Solid ${woodEn} desk top, ${q.en.toLowerCase()}, thickness ${dikte}mm. Ideal for a desk or worktop. Sturdy and durable.`,
+      };
+    case "traptrede":
+      return {
+        nl: `Massief ${woodNl} traptrede, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Op maat gezaagd voor uw trap. Beschikbaar als renovatietrede of massieve trede.`,
+        fr: `Marche d'escalier en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Découpée sur mesure pour votre escalier.`,
+        en: `Solid ${woodEn} stair tread, ${q.en.toLowerCase()}, thickness ${dikte}mm. Cut to size for your staircase. Available as renovation or solid tread.`,
+      };
     case "paneel":
       return {
-        nl: `Massief eiken paneel, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Beschikbaar in diverse standaardafmetingen. Geschikt voor meubels, wandbekleding, trappen en interieurtoepassingen.`,
-        fr: `Panneau en chêne massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Disponible en plusieurs dimensions standard. Convient pour meubles, revêtements muraux, escaliers et applications intérieures.`,
-        en: `Solid oak panel, ${q.en.toLowerCase()}, thickness ${dikte}mm. Available in various standard sizes. Suitable for furniture, wall cladding, stairs and interior applications.`,
+        nl: `Massief ${woodNl} paneel, ${q.nl.toLowerCase()}, dikte ${dikte}mm. Beschikbaar in diverse standaardafmetingen. Geschikt voor meubels, wandbekleding, trappen en interieurtoepassingen.`,
+        fr: `Panneau en ${woodFr} massif, ${q.fr.toLowerCase()}, épaisseur ${dikte}mm. Disponible en plusieurs dimensions standard. Convient pour meubles, revêtements muraux, escaliers et applications intérieures.`,
+        en: `Solid ${woodEn} panel, ${q.en.toLowerCase()}, thickness ${dikte}mm. Available in various standard sizes. Suitable for furniture, wall cladding, stairs and interior applications.`,
       };
     case "trapneus":
       return {
-        nl: `Eiken trapneus, ${dikte}mm dik. Perfecte afwerking voor uw eiken trap.`,
-        fr: `Nez de marche en chêne, épaisseur ${dikte}mm. Finition parfaite pour votre escalier en chêne.`,
-        en: `Oak stair nose, ${dikte}mm thick. Perfect finish for your oak staircase.`,
+        nl: `${woodNl.charAt(0).toUpperCase() + woodNl.slice(1)} trapneus, ${dikte}mm dik. Perfecte afwerking voor uw ${woodNl} trap.`,
+        fr: `Nez de marche en ${woodFr}, épaisseur ${dikte}mm. Finition parfaite pour votre escalier en ${woodFr}.`,
+        en: `${woodEn.charAt(0).toUpperCase() + woodEn.slice(1)} stair nose, ${dikte}mm thick. Perfect finish for your ${woodEn} staircase.`,
       };
     default:
       return {
-        nl: `Eiken product ${q.nl.toLowerCase()}, ${dikte}mm dik.`,
-        fr: `Produit en chêne ${q.fr.toLowerCase()}, épaisseur ${dikte}mm.`,
-        en: `Oak product ${q.en.toLowerCase()}, ${dikte}mm thick.`,
+        nl: `${woodNl.charAt(0).toUpperCase() + woodNl.slice(1)} product ${q.nl.toLowerCase()}, ${dikte}mm dik.`,
+        fr: `Produit en ${woodFr} ${q.fr.toLowerCase()}, épaisseur ${dikte}mm.`,
+        en: `${woodEn.charAt(0).toUpperCase() + woodEn.slice(1)} product ${q.en.toLowerCase()}, ${dikte}mm thick.`,
       };
   }
 }
@@ -276,7 +368,7 @@ function buildDescription(type, quality, dikte) {
 const sanityProducts = [];
 
 for (const [key, group] of groups) {
-  const title = buildTitle(group.type, group.quality, group.dikte);
+  const title = buildTitle(group.type, group.quality, group.dikte, group.woodType);
   const slug = slugify(title.nl);
 
   // Sorteer standaardmaten op oppervlakte (klein → groot)
@@ -302,12 +394,12 @@ for (const [key, group] of groups) {
     _type: "product",
     title,
     slug: { _type: "slug", current: slug },
-    shortDescription: buildDescription(group.type, group.quality, group.dikte),
+    shortDescription: buildDescription(group.type, group.quality, group.dikte, group.woodType),
     category: {
       _type: "reference",
       _ref: CATEGORY_MAP[group.type] || "cat-panelen",
     },
-    woodType: "european-oak",
+    woodType: group.woodType || "european-oak",
     finish: "raw",
     standardSizes: sortedSizes,
     customDimensions: {
@@ -322,7 +414,9 @@ for (const [key, group] of groups) {
     specifications: [
       {
         label: { nl: "Houtsoort", fr: "Type de bois", en: "Wood type" },
-        value: { nl: "Europees eik", fr: "Chêne européen", en: "European oak" },
+        value: group.woodType === "walnut"
+          ? { nl: "Notelaar", fr: "Noyer", en: "Walnut" }
+          : { nl: "Europees eik", fr: "Chêne européen", en: "European oak" },
         _key: "sp1",
       },
       {
@@ -344,22 +438,8 @@ for (const [key, group] of groups) {
     featured: group.type === "paneel",
   };
 
-  // Voeg prijs/m² toe als specificatie als die bekend is
-  if (avgVkpM2 > 0) {
-    product.specifications.push({
-      label: {
-        nl: "Richtprijs per m²",
-        fr: "Prix indicatif par m²",
-        en: "Indicative price per m²",
-      },
-      value: {
-        nl: `€ ${avgVkpM2.toFixed(2).replace(".", ",")}`,
-        fr: `€ ${avgVkpM2.toFixed(2).replace(".", ",")}`,
-        en: `€ ${avgVkpM2.toFixed(2)}`,
-      },
-      _key: "sp4",
-    });
-  }
+  // Richtprijs per m² niet meer toevoegen als specificatie
+  // (wordt niet weergegeven op de website)
 
   sanityProducts.push(product);
 }
@@ -426,25 +506,89 @@ async function importToSanity() {
   // Controleer of categorieën bestaan, zo niet → aanmaken
   console.log("📁 Categorieën controleren...");
   const existingCats = await client.fetch('*[_type == "category"]._id');
-  const neededCats = ["cat-panelen"];
+
+  // Verzamel alle benodigde categorieën uit de producten
+  const neededCats = [...new Set(sanityProducts.map((p) => p.category._ref))];
   const missingCats = neededCats.filter((id) => !existingCats.includes(id));
+
+  const CATEGORY_DEFS = {
+    "cat-panelen": {
+      title: { nl: "Panelen", fr: "Panneaux", en: "Panels" },
+      slug: "panelen",
+      description: {
+        nl: "Massief eiken panelen in diverse afmetingen. Geschikt voor meubels, wand, vloer, plafond en trappen.",
+        fr: "Panneaux en chêne massif en diverses dimensions. Pour meubles, murs, sols, plafonds et escaliers.",
+        en: "Solid oak panels in various sizes. Suitable for furniture, walls, floors, ceilings and stairs.",
+      },
+      order: 1,
+    },
+    "cat-vensterbanken": {
+      title: { nl: "Vensterbanken", fr: "Appuis de fenêtre", en: "Window Sills" },
+      slug: "vensterbanken",
+      description: {
+        nl: "Massief houten vensterbanken op maat gezaagd. Eik en notelaar in diverse diktes en lengtes.",
+        fr: "Appuis de fenêtre en bois massif découpés sur mesure. Chêne et noyer en diverses épaisseurs et longueurs.",
+        en: "Solid wood window sills cut to size. Oak and walnut in various thicknesses and lengths.",
+      },
+      order: 2,
+    },
+    "cat-wandplanken": {
+      title: { nl: "Wandplanken", fr: "Étagères murales", en: "Wall Shelves" },
+      slug: "wandplanken",
+      description: {
+        nl: "Massief houten wandplanken. Perfect als zwevende plank voor uw interieur.",
+        fr: "Étagères murales en bois massif. Parfaites comme étagères flottantes pour votre intérieur.",
+        en: "Solid wood wall shelves. Perfect as floating shelves for your interior.",
+      },
+      order: 3,
+    },
+    "cat-tafelbladen": {
+      title: { nl: "Tafelbladen", fr: "Plateaux de table", en: "Table Tops" },
+      slug: "tafelbladen",
+      description: {
+        nl: "Massief houten tafelbladen in diverse afmetingen. Geschikt als eet- of werktafel.",
+        fr: "Plateaux de table en bois massif en diverses dimensions. Pour table à manger ou de travail.",
+        en: "Solid wood table tops in various sizes. Suitable as dining or work table.",
+      },
+      order: 4,
+    },
+    "cat-bureabladen": {
+      title: { nl: "Bureabladen", fr: "Plateaux de bureau", en: "Desk Tops" },
+      slug: "bureabladen",
+      description: {
+        nl: "Massief houten bureabladen. Ideaal voor een stijlvol en duurzaam bureau of werkblad.",
+        fr: "Plateaux de bureau en bois massif. Idéals pour un bureau élégant et durable.",
+        en: "Solid wood desk tops. Ideal for a stylish and durable desk or worktop.",
+      },
+      order: 5,
+    },
+    "cat-traptreden": {
+      title: { nl: "Traptreden", fr: "Marches d'escalier", en: "Stair Treads" },
+      slug: "traptreden",
+      description: {
+        nl: "Massief houten traptreden op maat. Beschikbaar als renovatietrede of massieve trede in diverse houtsoorten.",
+        fr: "Marches d'escalier en bois massif sur mesure. Disponibles pour rénovation ou en marches massives.",
+        en: "Solid wood stair treads cut to size. Available as renovation or solid treads in various wood types.",
+      },
+      order: 6,
+    },
+  };
 
   if (missingCats.length > 0) {
     console.log(`   Ontbrekende categorie(ën) aanmaken: ${missingCats.join(", ")}`);
     const catTx = client.transaction();
-    if (missingCats.includes("cat-panelen")) {
-      catTx.createOrReplace({
-        _id: "cat-panelen",
-        _type: "category",
-        title: { nl: "Panelen", fr: "Panneaux", en: "Panels" },
-        slug: { _type: "slug", current: "panelen" },
-        description: {
-          nl: "Massief eiken panelen in diverse afmetingen. Geschikt voor meubels, wand, vloer, plafond en trappen.",
-          fr: "Panneaux en chêne massif en diverses dimensions. Pour meubles, murs, sols, plafonds et escaliers.",
-          en: "Solid oak panels in various sizes. Suitable for furniture, walls, floors, ceilings and stairs.",
-        },
-        order: 1,
-      });
+    for (const catId of missingCats) {
+      const def = CATEGORY_DEFS[catId];
+      if (def) {
+        catTx.createOrReplace({
+          _id: catId,
+          _type: "category",
+          title: def.title,
+          slug: { _type: "slug", current: def.slug },
+          description: def.description,
+          order: def.order,
+        });
+      }
     }
     await catTx.commit();
     console.log("   ✓ Categorieën aangemaakt\n");

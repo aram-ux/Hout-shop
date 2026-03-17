@@ -7,6 +7,8 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/cart/CartDrawer";
+import CookieConsent from "@/components/analytics/CookieConsent";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { organizationJsonLd, websiteJsonLd, localBusinessJsonLd } from "@/lib/seo";
 
 const geistSans = Geist({
@@ -67,6 +69,8 @@ export default async function LocaleLayout({
             <Footer />
           </div>
           <CartDrawer />
+          <CookieConsent />
+          <GoogleAnalytics />
         </NextIntlClientProvider>
       </body>
     </html>

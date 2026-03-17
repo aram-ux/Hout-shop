@@ -175,6 +175,50 @@ export interface ProductsPage {
   emptyStateMessage?: LocalizedString;
 }
 
+export interface InfoPage {
+  pageTitle?: LocalizedString;
+  pageSubtitle?: LocalizedString;
+  pageDescription?: LocalizedString;
+  qualitiesTitle?: LocalizedString;
+  qualitiesIntro?: LocalizedString;
+  qualities?: {
+    name?: LocalizedString;
+    description?: LocalizedString;
+    features?: LocalizedString[];
+  }[];
+  panelsTitle?: LocalizedString;
+  panelsIntro?: LocalizedString;
+  panels?: {
+    name?: LocalizedString;
+    description?: LocalizedString;
+  }[];
+  originsTitle?: LocalizedString;
+  originsIntro?: LocalizedString;
+  origins?: {
+    name?: LocalizedString;
+    description?: LocalizedString;
+  }[];
+  dimensionsTitle?: LocalizedString;
+  dimensionsIntro?: LocalizedString;
+  dimensionsPropertyLabel?: LocalizedString;
+  dimensionsRangeLabel?: LocalizedString;
+  dimensions?: {
+    label?: LocalizedString;
+    value?: LocalizedString;
+  }[];
+  generalTitle?: LocalizedString;
+  generalPropertyLabel?: LocalizedString;
+  generalValueLabel?: LocalizedString;
+  generalInfo?: {
+    label?: LocalizedString;
+    value?: LocalizedString;
+  }[];
+  ctaTitle?: LocalizedString;
+  ctaText?: LocalizedString;
+  ctaProductsLabel?: LocalizedString;
+  ctaContactLabel?: LocalizedString;
+}
+
 // ---- Cart Types ----
 
 export interface CartItem {
@@ -213,6 +257,20 @@ export interface CheckoutForm {
 }
 
 // ---- Utility Types ----
+
+export interface BlogPost {
+  _id: string;
+  title: LocalizedString;
+  slug: { current: string };
+  excerpt?: LocalizedString;
+  body?: LocalizedBlock;
+  mainImage?: SanityImage;
+  publishedAt?: string;
+  author?: string;
+  tags?: string[];
+  seoTitle?: LocalizedString;
+  seoDescription?: LocalizedString;
+}
 
 export type LocalizedField<T> = {
   [key in Locale]?: T;

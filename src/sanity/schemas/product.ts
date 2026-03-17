@@ -238,6 +238,7 @@ export default defineType({
           { title: "American White Oak", value: "american-white-oak" },
           { title: "French Oak", value: "french-oak" },
           { title: "Slavonian Oak", value: "slavonian-oak" },
+          { title: "Walnut", value: "walnut" },
         ],
       },
     }),

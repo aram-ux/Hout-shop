@@ -6,6 +6,8 @@ import homePage from "./homePage";
 import aboutPage from "./aboutPage";
 import contactPage from "./contactPage";
 import productsPage from "./productsPage";
+import infoPage from "./infoPage";
+import blogPost from "./blogPost";
 
 export const schemaTypes = [
   product,
@@ -16,4 +18,6 @@ export const schemaTypes = [
   aboutPage,
   contactPage,
   productsPage,
+  infoPage,
+  blogPost,
 ];

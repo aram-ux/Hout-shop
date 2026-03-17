@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import PurchaseTracker from "@/components/analytics/PurchaseTracker";
 import type { Locale } from "@/i18n/routing";
 
 export default async function CheckoutSuccessPage({
@@ -46,6 +47,10 @@ export default async function CheckoutSuccessPage({
               {t("backToShop")}
             </Button>
           </Link>
+
+          {search.orderNumber && (
+            <PurchaseTracker orderNumber={search.orderNumber} />
+          )}
         </div>
       </Container>
     </section>

@@ -1,0 +1,108 @@
+product_id;accountancy;group1;mancode;brand;itemnumber;barcode;description;active;Dikte;Breedte;Lengte;m²;€/m² AKP;€/m² VKP;AKP €/stk;VKP €/stk;Marge
+;Decotrap;VENSTERBANKEN;Eik VB 20 1000-200;Decotrap;Eik VB 20 1000-200;;Eiken vensterbank Kwaliteit A 1000x200x20mm;1;20;200;1000;0,2000; € 106,90 ; € 155,00 ; € 21,38 ; € 31,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1000-250;Decotrap;Eik VB 20 1000-250;;Eiken vensterbank Kwaliteit A 1000x250x20mm;1;20;250;1000;0,2500; € 106,90 ; € 155,00 ; € 26,73 ; € 38,75 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1200-200;Decotrap;Eik VB 20 1200-200;;Eiken vensterbank Kwaliteit A 1200x200x20mm;1;20;200;1200;0,2400; € 106,90 ; € 155,00 ; € 25,66 ; € 37,20 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1200-250;Decotrap;Eik VB 20 1200-250;;Eiken vensterbank Kwaliteit A 1200x250x20mm;1;20;250;1200;0,3000; € 106,90 ; € 155,00 ; € 32,07 ; € 46,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1400-250;Decotrap;Eik VB 20 1400-250;;Eiken vensterbank Kwaliteit A 1400x250x20mm;1;20;250;1400;0,3500; € 106,90 ; € 155,00 ; € 37,42 ; € 54,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1600-250;Decotrap;Eik VB 20 1600-250;;Eiken vensterbank Kwaliteit A 1600x250x20mm;1;20;250;1600;0,4000; € 106,90 ; € 155,00 ; € 42,76 ; € 62,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 1600-300;Decotrap;Eik VB 20 1600-300;;Eiken vensterbank Kwaliteit A 1600x300x20mm;1;20;300;1600;0,4800; € 106,90 ; € 155,00 ; € 51,31 ; € 74,40 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2000-250;Decotrap;Eik VB 20 2000-250;;Eiken vensterbank Kwaliteit A 2000x250x20mm;1;20;250;2000;0,5000; € 106,90 ; € 155,00 ; € 53,45 ; € 77,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2000-300;Decotrap;Eik VB 20 2000-300;;Eiken vensterbank Kwaliteit A 2000x300x20mm;1;20;300;2000;0,6000; € 106,90 ; € 155,00 ; € 64,14 ; € 93,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2200-250;Decotrap;Eik VB 20 2200-250;;Eiken vensterbank Kwaliteit A 2200x250x20mm;1;20;250;2200;0,5500; € 106,90 ; € 155,00 ; € 58,80 ; € 85,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2200-300;Decotrap;Eik VB 20 2200-300;;Eiken vensterbank Kwaliteit A 2200x300x20mm;1;20;300;2200;0,6600; € 106,90 ; € 155,00 ; € 70,55 ; € 102,30 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2500-250;Decotrap;Eik VB 20 2500-250;;Eiken vensterbank Kwaliteit A 2500x250x20mm;1;20;250;2500;0,6250; € 106,90 ; € 155,00 ; € 66,81 ; € 96,88 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 20 2500-300;Decotrap;Eik VB 20 2500-300;;Eiken vensterbank Kwaliteit A 2500x300x20mm;1;20;300;2500;0,7500; € 106,90 ; € 155,00 ; € 80,18 ; € 116,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 1000-200;Decotrap;Eik VB 30 1000-200;;Eiken vensterbank Kwaliteit A 1000x200x30mm;1;30;200;1000;0,2000; € 172,41 ; € 250,00 ; € 34,48 ; € 50,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 1000-250;Decotrap;Eik VB 30 1000-250;;Eiken vensterbank Kwaliteit A 1000x250x30mm;1;30;250;1000;0,2500; € 172,41 ; € 250,00 ; € 43,10 ; € 62,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 1000-300;Decotrap;Eik VB 30 1000-300;;Eiken vensterbank Kwaliteit A 1000x300x30mm;1;30;300;1000;0,3000; € 172,41 ; € 250,00 ; € 51,72 ; € 75,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 1300-250;Decotrap;Eik VB 30 1300-250;;Eiken vensterbank Kwaliteit A 1300x250x30mm;1;30;250;1300;0,3250; € 172,41 ; € 250,00 ; € 56,03 ; € 81,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 1300-300;Decotrap;Eik VB 30 1300-300;;Eiken vensterbank Kwaliteit A 1300x300x30mm;1;30;300;1300;0,3900; € 172,41 ; € 250,00 ; € 67,24 ; € 97,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 2000-250;Decotrap;Eik VB 30 2000-250;;Eiken vensterbank Kwaliteit A 2000x250x30mm;1;30;250;2000;0,5000; € 172,41 ; € 250,00 ; € 86,21 ; € 125,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 2000-300;Decotrap;Eik VB 30 2000-300;;Eiken vensterbank Kwaliteit A 2000x300x30mm;1;30;300;2000;0,6000; € 172,41 ; € 250,00 ; € 103,45 ; € 150,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 2200-250;Decotrap;Eik VB 30 2200-250;;Eiken vensterbank Kwaliteit A 2200x250x30mm;1;30;250;2200;0,5500; € 172,41 ; € 250,00 ; € 94,83 ; € 137,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 30 2200-300;Decotrap;Eik VB 30 2200-300;;Eiken vensterbank Kwaliteit A 2200x300x30mm;1;30;300;2200;0,6600; € 172,41 ; € 250,00 ; € 113,79 ; € 165,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1000-200;Decotrap;Eik VB 40 1000-200;;Eiken vensterbank Kwaliteit A 1000x200x40mm;1;40;200;1000;0,2000; € 186,21 ; € 270,00 ; € 37,24 ; € 54,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1000-250;Decotrap;Eik VB 40 1000-250;;Eiken vensterbank Kwaliteit A 1000x250x40mm;1;40;250;1000;0,2500; € 186,21 ; € 270,00 ; € 46,55 ; € 67,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1000-300;Decotrap;Eik VB 40 1000-300;;Eiken vensterbank Kwaliteit A 1000x300x40mm;1;40;300;1000;0,3000; € 186,21 ; € 270,00 ; € 55,86 ; € 81,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1300-250;Decotrap;Eik VB 40 1300-250;;Eiken vensterbank Kwaliteit A 1300x250x40mm;1;40;250;1300;0,3250; € 186,21 ; € 270,00 ; € 60,52 ; € 87,75 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1300-300;Decotrap;Eik VB 40 1300-300;;Eiken vensterbank Kwaliteit A 1300x300x40mm;1;40;300;1300;0,3900; € 186,21 ; € 270,00 ; € 72,62 ; € 105,30 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1600-250;Decotrap;Eik VB 40 1600-250;;Eiken vensterbank Kwaliteit A 1600x250x40mm;1;40;250;1600;0,4000; € 186,21 ; € 270,00 ; € 74,48 ; € 108,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik VB 40 1600-300;Decotrap;Eik VB 40 1600-300;;Eiken vensterbank Kwaliteit A 1600x300x40mm;1;40;300;1600;0,4800; € 186,21 ; € 270,00 ; € 89,38 ; € 129,60 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1400-250;Decotrap;Eik R VB 21 1400-250;;Eiken vensterbank Rustiek 1400x250x21mm;1;21;250;1400;0,3500; € 79,31 ; € 115,00 ; € 27,76 ; € 40,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1400-300;Decotrap;Eik R VB 21 1400-300;;Eiken vensterbank Rustiek 1400x300x21mm;1;21;300;1400;0,4200; € 79,31 ; € 115,00 ; € 33,31 ; € 48,30 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1600-250;Decotrap;Eik R VB 21 1600-250;;Eiken vensterbank Rustiek 1600x250x21mm;1;21;250;1600;0,4000; € 79,31 ; € 115,00 ; € 31,72 ; € 46,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1600-300;Decotrap;Eik R VB 21 1600-300;;Eiken vensterbank Rustiek 1600x300x21mm;1;21;300;1600;0,4800; € 79,31 ; € 115,00 ; € 38,07 ; € 55,20 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1800-250;Decotrap;Eik R VB 21 1800-250;;Eiken vensterbank Rustiek 1800x250x21mm;1;21;250;1800;0,4500; € 79,31 ; € 115,00 ; € 35,69 ; € 51,75 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 21 1800-300;Decotrap;Eik R VB 21 1800-300;;Eiken vensterbank Rustiek 1800x300x21mm;1;21;300;1800;0,5400; € 79,31 ; € 115,00 ; € 42,83 ; € 62,10 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1000-250;Decotrap;Eik R VB 40 1000-250;;Eiken vensterbank Rustiek 1000x250x40mm;1;40;250;1000;0,2500; € 127,59 ; € 185,00 ; € 31,90 ; € 46,25 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1000-300;Decotrap;Eik R VB 40 1000-300;;Eiken vensterbank Rustiek 1000x300x40mm;1;40;300;1000;0,3000; € 127,59 ; € 185,00 ; € 38,28 ; € 55,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1300-250;Decotrap;Eik R VB 40 1300-250;;Eiken vensterbank Rustiek 1300x250x40mm;1;40;250;1300;0,3250; € 127,59 ; € 185,00 ; € 41,47 ; € 60,13 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1300-300;Decotrap;Eik R VB 40 1300-300;;Eiken vensterbank Rustiek 1300x300x40mm;1;40;300;1300;0,3900; € 127,59 ; € 185,00 ; € 49,76 ; € 72,15 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1600-250;Decotrap;Eik R VB 40 1600-250;;Eiken vensterbank Rustiek 1600x250x40mm;1;40;250;1600;0,4000; € 127,59 ; € 185,00 ; € 51,04 ; € 74,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 1600-300;Decotrap;Eik R VB 40 1600-300;;Eiken vensterbank Rustiek 1600x300x40mm;1;40;300;1600;0,4800; € 127,59 ; € 185,00 ; € 61,24 ; € 88,80 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 2000-250;Decotrap;Eik R VB 40 2000-250;;Eiken vensterbank Rustiek 2000x250x40mm;1;40;250;2000;0,5000; € 127,59 ; € 185,00 ; € 63,80 ; € 92,50 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 2000-300;Decotrap;Eik R VB 40 2000-300;;Eiken vensterbank Rustiek 2000x300x40mm;1;40;300;2000;0,6000; € 127,59 ; € 185,00 ; € 76,55 ; € 111,00 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 2500-250;Decotrap;Eik R VB 40 2500-250;;Eiken vensterbank Rustiek 2500x250x40mm;1;40;250;2500;0,6250; € 127,59 ; € 185,00 ; € 79,74 ; € 115,63 ;45%
+;Decotrap;VENSTERBANKEN;Eik R VB 40 2500-300;Decotrap;Eik R VB 40 2500-300;;Eiken vensterbank Rustiek 2500x300x40mm;1;40;300;2500;0,7500; € 127,59 ; € 185,00 ; € 95,69 ; € 138,75 ;45%
+;Decotrap;VENSTERBANKEN;Not VB 20 1000-200;Decotrap;Not VB 20 1000-200;;Notelaar vensterbank 1000x200x20mm;1;20;200;1000;0,2000; € 213,79 ; € 310,00 ; € 42,76 ; € 62,00 ;45%
+;Decotrap;VENSTERBANKEN;Not VB 20 1000-250;Decotrap;Not VB 20 1000-250;;Notelaar vensterbank 1000x250x20mm;1;20;250;1000;0,2500; € 213,79 ; € 310,00 ; € 53,45 ; € 77,50 ;45%
+;Decotrap;VENSTERBANKEN;Not VB 20 1600-200;Decotrap;Not VB 20 1600-200;;Notelaar vensterbank 1600x200x20mm;1;20;200;1600;0,3200; € 213,79 ; € 310,00 ; € 68,41 ; € 99,20 ;45%
+;Decotrap;VENSTERBANKEN;Not VB 20 1600-250;Decotrap;Not VB 20 1600-250;;Notelaar vensterbank 1600x250x20mm;1;20;250;1600;0,4000; € 213,79 ; € 310,00 ; € 85,52 ; € 124,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 800-200;Decotrap;Eik WP 20 800-200;;Eiken wandplank Kwaliteit A 800x200x20mm;1;20;200;800;0,1600; € 110,34 ; € 160,00 ; € 17,65 ; € 25,60 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 800-250;Decotrap;Eik WP 20 800-250;;Eiken wandplank Kwaliteit A 800x250x20mm;1;20;250;800;0,2000; € 110,34 ; € 160,00 ; € 22,07 ; € 32,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1000-200;Decotrap;Eik WP 20 1000-200;;Eiken wandplank Kwaliteit A 1000x200x20mm;1;20;200;1000;0,2000; € 110,34 ; € 160,00 ; € 22,07 ; € 32,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1000-250;Decotrap;Eik WP 20 1000-250;;Eiken wandplank Kwaliteit A 1000x250x20mm;1;20;250;1000;0,2500; € 110,34 ; € 160,00 ; € 27,59 ; € 40,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1200-200;Decotrap;Eik WP 20 1200-200;;Eiken wandplank Kwaliteit A 1200x200x20mm;1;20;200;1200;0,2400; € 110,34 ; € 160,00 ; € 26,48 ; € 38,40 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1200-250;Decotrap;Eik WP 20 1200-250;;Eiken wandplank Kwaliteit A 1200x250x20mm;1;20;250;1200;0,3000; € 110,34 ; € 160,00 ; € 33,10 ; € 48,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1600-200;Decotrap;Eik WP 20 1600-200;;Eiken wandplank Kwaliteit A 1600x200x20mm;1;20;200;1600;0,3200; € 110,34 ; € 160,00 ; € 35,31 ; € 51,20 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 20 1600-250;Decotrap;Eik WP 20 1600-250;;Eiken wandplank Kwaliteit A 1600x250x20mm;1;20;250;1600;0,4000; € 110,34 ; € 160,00 ; € 44,14 ; € 64,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 30 800-200;Decotrap;Eik WP 30 800-200;;Eiken wandplank Kwaliteit A 800x200x30mm;1;30;200;800;0,1600; € 175,86 ; € 255,00 ; € 28,14 ; € 40,80 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 30 800-250;Decotrap;Eik WP 30 800-250;;Eiken wandplank Kwaliteit A 800x250x30mm;1;30;250;800;0,2000; € 175,86 ; € 255,00 ; € 35,17 ; € 51,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 30 1000-200;Decotrap;Eik WP 30 1000-200;;Eiken wandplank Kwaliteit A 1000x200x30mm;1;30;200;1000;0,2000; € 175,86 ; € 255,00 ; € 35,17 ; € 51,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 30 1000-250;Decotrap;Eik WP 30 1000-250;;Eiken wandplank Kwaliteit A 1000x250x30mm;1;30;250;1000;0,2500; € 175,86 ; € 255,00 ; € 43,97 ; € 63,75 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 30 1000-300;Decotrap;Eik WP 30 1000-300;;Eiken wandplank Kwaliteit A 1000x300x30mm;1;30;300;1000;0,3000; € 175,86 ; € 255,00 ; € 52,76 ; € 76,50 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 800-200;Decotrap;Eik WP 40 800-200;;Eiken wandplank Kwaliteit A 800x200x40mm;1;40;200;800;0,1600; € 189,66 ; € 275,00 ; € 30,35 ; € 44,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 800-250;Decotrap;Eik WP 40 800-250;;Eiken wandplank Kwaliteit A 800x250x40mm;1;40;250;800;0,2000; € 189,66 ; € 275,00 ; € 37,93 ; € 55,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 800-300;Decotrap;Eik WP 40 800-300;;Eiken wandplank Kwaliteit A 800x300x40mm;1;40;300;800;0,2400; € 189,66 ; € 275,00 ; € 45,52 ; € 66,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1000-200;Decotrap;Eik WP 40 1000-200;;Eiken wandplank Kwaliteit A 1000x200x40mm;1;40;200;1000;0,2000; € 189,66 ; € 275,00 ; € 37,93 ; € 55,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1000-250;Decotrap;Eik WP 40 1000-250;;Eiken wandplank Kwaliteit A 1000x250x40mm;1;40;250;1000;0,2500; € 189,66 ; € 275,00 ; € 47,42 ; € 68,75 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1000-300;Decotrap;Eik WP 40 1000-300;;Eiken wandplank Kwaliteit A 1000x300x40mm;1;40;300;1000;0,3000; € 189,66 ; € 275,00 ; € 56,90 ; € 82,50 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1200-250;Decotrap;Eik WP 40 1200-250;;Eiken wandplank Kwaliteit A 1200x250x40mm;1;40;250;1200;0,3000; € 189,66 ; € 275,00 ; € 56,90 ; € 82,50 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1200-300;Decotrap;Eik WP 40 1200-300;;Eiken wandplank Kwaliteit A 1200x300x40mm;1;40;300;1200;0,3600; € 189,66 ; € 275,00 ; € 68,28 ; € 99,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1600-250;Decotrap;Eik WP 40 1600-250;;Eiken wandplank Kwaliteit A 1600x250x40mm;1;40;250;1600;0,4000; € 189,66 ; € 275,00 ; € 75,86 ; € 110,00 ;45%
+;Decotrap;WANDPLANKEN;Eik WP 40 1600-300;Decotrap;Eik WP 40 1600-300;;Eiken wandplank Kwaliteit A 1600x300x40mm;1;40;300;1600;0,4800; € 189,66 ; € 275,00 ; € 91,04 ; € 132,00 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1000-250;Decotrap;Eik R WP 40 1000-250;;Eiken wandplank Rustiek 1000x250x40mm;1;40;250;1000;0,2500; € 134,48 ; € 195,00 ; € 33,62 ; € 48,75 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1000-300;Decotrap;Eik R WP 40 1000-300;;Eiken wandplank Rustiek 1000x300x40mm;1;40;300;1000;0,3000; € 134,48 ; € 195,00 ; € 40,34 ; € 58,50 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1300-250;Decotrap;Eik R WP 40 1300-250;;Eiken wandplank Rustiek 1300x250x40mm;1;40;250;1300;0,3250; € 134,48 ; € 195,00 ; € 43,71 ; € 63,38 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1300-300;Decotrap;Eik R WP 40 1300-300;;Eiken wandplank Rustiek 1300x300x40mm;1;40;300;1300;0,3900; € 134,48 ; € 195,00 ; € 52,45 ; € 76,05 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1600-250;Decotrap;Eik R WP 40 1600-250;;Eiken wandplank Rustiek 1600x250x40mm;1;40;250;1600;0,4000; € 134,48 ; € 195,00 ; € 53,79 ; € 78,00 ;45%
+;Decotrap;WANDPLANKEN;Eik R WP 40 1600-300;Decotrap;Eik R WP 40 1600-300;;Eiken wandplank Rustiek 1600x300x40mm;1;40;300;1600;0,4800; € 134,48 ; € 195,00 ; € 64,55 ; € 93,60 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 1000-600;Decotrap;Eik TB 30 1000-600;;Eiken tafelblad Kwaliteit A 1000x600x30mm;1;30;600;1000;0,6000; € 144,83 ; € 210,00 ; € 86,90 ; € 126,00 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 1000-1100;Decotrap;Eik TB 30 1000-1100;;Eiken tafelblad Kwaliteit A 1000x1100x30mm;1;30;1100;1000;1,1000; € 144,83 ; € 210,00 ; € 159,31 ; € 231,00 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 1300-1100;Decotrap;Eik TB 30 1300-1100;;Eiken tafelblad Kwaliteit A 1300x1100x30mm;1;30;1100;1300;1,4300; € 144,83 ; € 210,00 ; € 207,11 ; € 300,30 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 2000-1100;Decotrap;Eik TB 30 2000-1100;;Eiken tafelblad Kwaliteit A 2000x1100x30mm;1;30;1100;2000;2,2000; € 144,83 ; € 210,00 ; € 318,63 ; € 462,00 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 2200-1100;Decotrap;Eik TB 30 2200-1100;;Eiken tafelblad Kwaliteit A 2200x1100x30mm;1;30;1100;2200;2,4200; € 144,83 ; € 210,00 ; € 350,49 ; € 508,20 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 30 2300-1100;Decotrap;Eik TB 30 2300-1100;;Eiken tafelblad Kwaliteit A 2300x1100x30mm;1;30;1100;2300;2,5300; € 144,83 ; € 210,00 ; € 366,42 ; € 531,30 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 40 1000-600;Decotrap;Eik TB 40 1000-600;;Eiken tafelblad Kwaliteit A 1000x600x40mm;1;40;600;1000;0,6000; € 151,72 ; € 220,00 ; € 91,03 ; € 132,00 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 40 1300-600;Decotrap;Eik TB 40 1300-600;;Eiken tafelblad Kwaliteit A 1300x600x40mm;1;40;600;1300;0,7800; € 151,72 ; € 220,00 ; € 118,34 ; € 171,60 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 40 1400-1100;Decotrap;Eik TB 40 1400-1100;;Eiken tafelblad Kwaliteit A 1400x1100x40mm;1;40;1100;1400;1,5400; € 151,72 ; € 220,00 ; € 233,65 ; € 338,80 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 40 1600-1100;Decotrap;Eik TB 40 1600-1100;;Eiken tafelblad Kwaliteit A 1600x1100x40mm;1;40;1100;1600;1,7600; € 151,72 ; € 220,00 ; € 267,03 ; € 387,20 ;45%
+;Decotrap;TAFELBLADEN;Eik TB 40 2000-1000;Decotrap;Eik TB 40 2000-1000;;Eiken tafelblad Kwaliteit A 2000x1000x40mm;1;40;1000;2000;2,0000; € 151,72 ; € 220,00 ; € 303,44 ; € 440,00 ;45%
+;Decotrap;TAFELBLADEN;Eik R TB 40 1300-1100;Decotrap;Eik R TB 40 1300-1100;;Eiken tafelblad Rustiek 1300x1100x40mm;1;40;1100;1300;1,4300; € 113,79 ; € 165,00 ; € 162,72 ; € 235,95 ;45%
+;Decotrap;TAFELBLADEN;Eik R TB 40 1600-1100;Decotrap;Eik R TB 40 1600-1100;;Eiken tafelblad Rustiek 1600x1100x40mm;1;40;1100;1600;1,7600; € 113,79 ; € 165,00 ; € 200,27 ; € 290,40 ;45%
+;Decotrap;TAFELBLADEN;Eik R TB 40 1800-1000;Decotrap;Eik R TB 40 1800-1000;;Eiken tafelblad Rustiek 1800x1000x40mm;1;40;1000;1800;1,8000; € 113,79 ; € 165,00 ; € 204,82 ; € 297,00 ;45%
+;Decotrap;TAFELBLADEN;Eik R TB 40 2000-1100;Decotrap;Eik R TB 40 2000-1100;;Eiken tafelblad Rustiek 2000x1100x40mm;1;40;1100;2000;2,2000; € 113,79 ; € 165,00 ; € 250,34 ; € 363,00 ;45%
+;Decotrap;TAFELBLADEN;Eik R TB 40 2500-1100;Decotrap;Eik R TB 40 2500-1100;;Eiken tafelblad Rustiek 2500x1100x40mm;1;40;1100;2500;2,7500; € 113,79 ; € 165,00 ; € 312,92 ; € 453,75 ;45%
+;Decotrap;BUREABLADEN;Eik BB 20 1200-530;Decotrap;Eik BB 20 1200-530;;Eiken bureaublad Kwaliteit A 1200x530x20mm;1;20;530;1200;0,6360; € 103,45 ; € 150,00 ; € 65,79 ; € 95,40 ;45%
+;Decotrap;BUREABLADEN;Eik BB 20 1400-650;Decotrap;Eik BB 20 1400-650;;Eiken bureaublad Kwaliteit A 1400x650x20mm;1;20;650;1400;0,9100; € 103,45 ; € 150,00 ; € 94,14 ; € 136,50 ;45%
+;Decotrap;BUREABLADEN;Eik BB 20 1600-650;Decotrap;Eik BB 20 1600-650;;Eiken bureaublad Kwaliteit A 1600x650x20mm;1;20;650;1600;1,0400; € 103,45 ; € 150,00 ; € 107,59 ; € 156,00 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 20 900-280;Decotrap;Eik TT 20 900-280;;Eiken traptrede Kwaliteit A 900x280x20mm;1;20;280;900;0,2520; € 106,90 ; € 155,00 ; € 26,94 ; € 39,06 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 20 1000-280;Decotrap;Eik TT 20 1000-280;;Eiken traptrede Kwaliteit A 1000x280x20mm;1;20;280;1000;0,2800; € 106,90 ; € 155,00 ; € 29,93 ; € 43,40 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 20 1100-280;Decotrap;Eik TT 20 1100-280;;Eiken traptrede Kwaliteit A 1100x280x20mm;1;20;280;1100;0,3080; € 106,90 ; € 155,00 ; € 32,93 ; € 47,74 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 20 1200-280;Decotrap;Eik TT 20 1200-280;;Eiken traptrede Kwaliteit A 1200x280x20mm;1;20;280;1200;0,3360; € 106,90 ; € 155,00 ; € 35,92 ; € 52,08 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 30 900-280;Decotrap;Eik TT 30 900-280;;Eiken traptrede Kwaliteit A 900x280x30mm;1;30;280;900;0,2520; € 172,41 ; € 250,00 ; € 43,45 ; € 63,00 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 30 1000-280;Decotrap;Eik TT 30 1000-280;;Eiken traptrede Kwaliteit A 1000x280x30mm;1;30;280;1000;0,2800; € 172,41 ; € 250,00 ; € 48,27 ; € 70,00 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 30 1100-280;Decotrap;Eik TT 30 1100-280;;Eiken traptrede Kwaliteit A 1100x280x30mm;1;30;280;1100;0,3080; € 172,41 ; € 250,00 ; € 53,10 ; € 77,00 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 40 1000-280;Decotrap;Eik TT 40 1000-280;;Eiken traptrede Kwaliteit A 1000x280x40mm;1;40;280;1000;0,2800; € 186,21 ; € 270,00 ; € 52,14 ; € 75,60 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 40 1200-280;Decotrap;Eik TT 40 1200-280;;Eiken traptrede Kwaliteit A 1200x280x40mm;1;40;280;1200;0,3360; € 186,21 ; € 270,00 ; € 62,57 ; € 90,72 ;45%
+;Decotrap;TRAPTREDEN;Eik TT 40 1300-280;Decotrap;Eik TT 40 1300-280;;Eiken traptrede Kwaliteit A 1300x280x40mm;1;40;280;1300;0,3640; € 186,21 ; € 270,00 ; € 67,78 ; € 98,28 ;45%

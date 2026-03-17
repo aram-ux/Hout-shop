@@ -42,6 +42,7 @@
     "products": "Produits",
     "about": "À propos",
     "info": "Info Produit",
+    "blog": "Blog",
     "contact": "Contact",
     "cart": "Panier",
     "checkout": "Paiement"
@@ -89,6 +90,7 @@
     "sortName": "Nom",
     "sortNewest": "Plus récent",
     "noProducts": "Aucun produit trouvé.",
+    "searchPlaceholder": "Rechercher par nom, type de bois, finition...",
     "startingFrom": "À partir de",
     "customAvailable": "Sur mesure possible",
     "specifications": "Spécifications",
@@ -344,5 +346,23 @@
     "supportDesc": "Service personnalisé",
     "secure": "Paiement sécurisé",
     "secureDesc": "iDEAL, Bancontact & plus"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Conseils, inspiration et tout sur le bois de chêne",
+    "readMore": "Lire la suite",
+    "publishedOn": "Publié le",
+    "by": "par",
+    "noPosts": "Aucun article publié pour le moment.",
+    "backToBlog": "Retour au blog",
+    "relatedPosts": "Articles connexes",
+    "allPosts": "Tous les articles"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Restez informé des nouveaux produits et offres.",
+    "success": "Merci ! Vous êtes inscrit.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "placeholder": "Votre adresse e-mail"
   }
 }

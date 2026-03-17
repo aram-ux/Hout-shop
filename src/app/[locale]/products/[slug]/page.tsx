@@ -3,11 +3,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { client } from "@/sanity/lib/client";
-import { productBySlugQuery, allProductsQuery } from "@/sanity/lib/queries";
+import { productBySlugQuery, allProductsQuery, relatedProductsQuery } from "@/sanity/lib/queries";
 import { localize } from "@/lib/utils";
 import { urlFor } from "@/sanity/lib/image";
 import Container from "@/components/ui/Container";
 import ProductDetail from "@/components/products/ProductDetail";
+import RelatedProducts from "@/components/products/RelatedProducts";
+import SocialShare from "@/components/products/SocialShare";
 import {
   buildAlternates,
   buildOpenGraph,
@@ -86,8 +88,15 @@ export default async function ProductPage({
   setRequestLocale(locale);
 
   let product: Product | null = null;
+  let relatedProducts: Product[] = [];
   try {
     product = await client.fetch(productBySlugQuery, { slug });
+    if (product?.category?.slug?.current) {
+      relatedProducts = await client.fetch(relatedProductsQuery, {
+        currentId: product._id,
+        categorySlug: product.category.slug.current,
+      });
+    }
   } catch {
     // Sanity not configured
   }
@@ -180,6 +189,20 @@ export default async function ProductPage({
       </Container>
 
       <ProductDetail product={product} />
+
+      <Container>
+        {/* Social Share */}
+        <div className="mt-8 pt-6 border-t border-oak-200">
+          <SocialShare
+            url={`${SITE_URL}${prefix}${productsPath[locale]}/${product.slug.current}`}
+            title={title}
+            description={description}
+          />
+        </div>
+
+        {/* Related Products */}
+        <RelatedProducts products={relatedProducts} />
+      </Container>
     </section>
   );
 }

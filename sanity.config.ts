@@ -39,6 +39,14 @@ export default defineConfig({
               ),
             S.divider(),
             S.listItem()
+              .title("Blog Posts")
+              .child(
+                S.documentTypeList("blogPost")
+                  .title("Blog Posts")
+                  .defaultOrdering([{ field: "publishedAt", direction: "desc" }])
+              ),
+            S.divider(),
+            S.listItem()
               .title("Home Page")
               .child(
                 S.document()

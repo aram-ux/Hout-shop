@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { X, Minus, Plus, ShoppingBag, ArrowRight } from "lucide-react";
 import { useCartStore } from "@/lib/store/cart";
+import { trackRemoveFromCart } from "@/lib/analytics";
 import { localize, formatPrice, calculateShipping, calculateVAT } from "@/lib/utils";
 import { urlFor } from "@/sanity/lib/image";
 import Button from "../ui/Button";
@@ -158,7 +159,15 @@ export default function CartDrawer() {
 
                   {/* Remove */}
                   <button
-                    onClick={() => removeItem(item.id)}
+                    onClick={() => {
+                      trackRemoveFromCart({
+                        id: item.productId,
+                        name: localize(item.productTitle, locale),
+                        price: item.unitPrice,
+                        quantity: item.quantity,
+                      });
+                      removeItem(item.id);
+                    }}
                     className="flex-shrink-0 p-1 text-oak-400 hover:text-error transition-colors cursor-pointer"
                     aria-label={t("remove")}
                   >

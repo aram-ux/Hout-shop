@@ -117,6 +117,29 @@ export const productsByCategoryQuery = groq`
   }
 `;
 
+export const relatedProductsQuery = groq`
+  *[_type == "product" && _id != $currentId && category->slug.current == $categorySlug && !(_id in path("drafts.**"))] | order(_createdAt desc) [0...3] {
+    _id,
+    title,
+    slug,
+    shortDescription,
+    mainImage,
+    category->{
+      _id,
+      title,
+      slug
+    },
+    standardSizes[]{
+      width,
+      height,
+      thickness,
+      price
+    },
+    inStock,
+    featured
+  }
+`;
+
 // ---- Category Queries ----
 
 export const allCategoriesQuery = groq`
@@ -236,6 +259,58 @@ export const productsPageQuery = groq`
   }
 `;
 
+// ---- Info Page Query ----
+
+export const infoPageQuery = groq`
+  *[_type == "infoPage"][0] {
+    pageTitle,
+    pageSubtitle,
+    pageDescription,
+    qualitiesTitle,
+    qualitiesIntro,
+    qualities[]{
+      name,
+      description,
+      features[]{
+        nl,
+        fr,
+        en
+      }
+    },
+    panelsTitle,
+    panelsIntro,
+    panels[]{
+      name,
+      description
+    },
+    originsTitle,
+    originsIntro,
+    origins[]{
+      name,
+      description
+    },
+    dimensionsTitle,
+    dimensionsIntro,
+    dimensionsPropertyLabel,
+    dimensionsRangeLabel,
+    dimensions[]{
+      label,
+      value
+    },
+    generalTitle,
+    generalPropertyLabel,
+    generalValueLabel,
+    generalInfo[]{
+      label,
+      value
+    },
+    ctaTitle,
+    ctaText,
+    ctaProductsLabel,
+    ctaContactLabel
+  }
+`;
+
 // ---- Order Queries ----
 
 export const orderByNumberQuery = groq`
@@ -250,5 +325,48 @@ export const orderByNumberQuery = groq`
     molliePaymentId,
     shippingAddress,
     _createdAt
+  }
+`;
+
+// ---- Blog Queries ----
+
+export const allBlogPostsQuery = groq`
+  *[_type == "blogPost" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
+    _id,
+    title,
+    slug,
+    excerpt,
+    mainImage,
+    publishedAt,
+    author,
+    tags
+  }
+`;
+
+export const blogPostBySlugQuery = groq`
+  *[_type == "blogPost" && slug.current == $slug && !(_id in path("drafts.**"))][0] {
+    _id,
+    title,
+    slug,
+    excerpt,
+    body,
+    mainImage,
+    publishedAt,
+    author,
+    tags,
+    seoTitle,
+    seoDescription
+  }
+`;
+
+export const recentBlogPostsQuery = groq`
+  *[_type == "blogPost" && !(_id in path("drafts.**"))] | order(publishedAt desc) [0...3] {
+    _id,
+    title,
+    slug,
+    excerpt,
+    mainImage,
+    publishedAt,
+    tags
   }
 `;

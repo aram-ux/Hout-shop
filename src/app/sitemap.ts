@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { client } from "@/sanity/lib/client";
-import { allProductsQuery } from "@/sanity/lib/queries";
+import { allProductsQuery, allBlogPostsQuery } from "@/sanity/lib/queries";
 import { SITE_URL } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
 import type { Product } from "@/types";
@@ -27,6 +27,16 @@ const staticRoutes: { path: Record<Locale, string>; priority: number; changeFreq
     path: { nl: "/contact", fr: "/contact", en: "/contact" },
     priority: 0.7,
     changeFrequency: "monthly",
+  },
+  {
+    path: { nl: "/info", fr: "/info", en: "/info" },
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    path: { nl: "/kennisbank", fr: "/blog", en: "/blog" },
+    priority: 0.8,
+    changeFrequency: "weekly",
   },
 ];
 
@@ -104,6 +114,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   } catch {
     // Sanity not configured — skip product URLs
+  }
+
+  // Dynamic blog post routes
+  try {
+    const posts: { slug: { current: string } }[] = await client.fetch(allBlogPostsQuery);
+
+    for (const post of posts) {
+      const slug = post.slug.current;
+
+      const blogPaths: Record<Locale, string> = {
+        nl: `/kennisbank/${slug}`,
+        fr: `/blog/${slug}`,
+        en: `/blog/${slug}`,
+      };
+
+      const languages: Record<string, string> = {};
+      for (const locale of routing.locales) {
+        const localePath = getLocalePath(locale as Locale, blogPaths[locale as Locale]);
+        languages[locale] = `${SITE_URL}${localePath}`;
+      }
+      const defaultPath = getLocalePath(
+        routing.defaultLocale as Locale,
+        blogPaths[routing.defaultLocale as Locale]
+      );
+      languages["x-default"] = `${SITE_URL}${defaultPath}`;
+
+      for (const locale of routing.locales) {
+        const localePath = getLocalePath(locale as Locale, blogPaths[locale as Locale]);
+        entries.push({
+          url: `${SITE_URL}${localePath}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+          alternates: { languages },
+        });
+      }
+    }
+  } catch {
+    // Sanity not configured — skip blog URLs
   }
 
   return entries;

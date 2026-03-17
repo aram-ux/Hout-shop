@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import { TreePine, Facebook, Instagram, Linkedin } from "lucide-react";
 import Container from "../ui/Container";
+import NewsletterSignup from "./NewsletterSignup";
 import type { Locale } from "@/i18n/routing";
 
 export default function Footer() {
@@ -19,6 +20,7 @@ export default function Footer() {
       products: { nl: "/producten", fr: "/produits", en: "/products" },
       about: { nl: "/over-ons", fr: "/a-propos", en: "/about" },
       info: { nl: "/info", fr: "/info", en: "/info" },
+      blog: { nl: "/kennisbank", fr: "/blog", en: "/blog" },
       contact: { nl: "/contact", fr: "/contact", en: "/contact" },
     };
     return `${prefix}${paths[key]?.[locale] || ""}`;
@@ -94,6 +96,14 @@ export default function Footer() {
                   className="text-oak-300 hover:text-gold transition-colors text-sm"
                 >
                   {tn("info")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getPath("blog")}
+                  className="text-oak-300 hover:text-gold transition-colors text-sm"
+                >
+                  {tn("blog")}
                 </Link>
               </li>
               <li>
@@ -181,6 +191,25 @@ export default function Footer() {
                 <span>BE 0000.000.000</span>
               </li>
             </ul>
+
+            {/* Newsletter */}
+            <div className="mt-6 pt-4 border-t border-oak-700">
+              <h4 className="text-white font-medium text-sm mb-2">
+                {locale === "nl"
+                  ? "Nieuwsbrief"
+                  : locale === "fr"
+                    ? "Newsletter"
+                    : "Newsletter"}
+              </h4>
+              <p className="text-oak-400 text-xs mb-3">
+                {locale === "nl"
+                  ? "Blijf op de hoogte van nieuwe producten en aanbiedingen."
+                  : locale === "fr"
+                    ? "Restez informé des nouveaux produits et offres."
+                    : "Stay informed about new products and offers."}
+              </p>
+              <NewsletterSignup />
+            </div>
           </div>
         </div>
       </Container>

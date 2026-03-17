@@ -49,6 +49,7 @@ export default function Header() {
       products: { nl: "/producten", fr: "/produits", en: "/products" },
       about: { nl: "/over-ons", fr: "/a-propos", en: "/about" },
       info: { nl: "/info", fr: "/info", en: "/info" },
+      blog: { nl: "/kennisbank", fr: "/blog", en: "/blog" },
       contact: { nl: "/contact", fr: "/contact", en: "/contact" },
       cart: { nl: "/winkelwagen", fr: "/panier", en: "/cart" },
     };
@@ -60,6 +61,7 @@ export default function Header() {
     { href: getPath("products"), label: t("products") },
     { href: getPath("about"), label: t("about") },
     { href: getPath("info"), label: t("info") },
+    { href: getPath("blog"), label: t("blog") },
     { href: getPath("contact"), label: t("contact") },
   ];
 

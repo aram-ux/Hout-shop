@@ -46,6 +46,16 @@ export const routing = defineRouting({
       fr: "/info",
       en: "/info",
     },
+    "/blog": {
+      nl: "/kennisbank",
+      fr: "/blog",
+      en: "/blog",
+    },
+    "/blog/[slug]": {
+      nl: "/kennisbank/[slug]",
+      fr: "/blog/[slug]",
+      en: "/blog/[slug]",
+    },
   },
 });
 

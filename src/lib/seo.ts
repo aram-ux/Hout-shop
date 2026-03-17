@@ -283,3 +283,46 @@ export function localBusinessJsonLd() {
     ],
   };
 }
+
+// ---- JSON-LD: CollectionPage (product listing) ----
+export function collectionPageJsonLd(products: {
+  name: string;
+  url: string;
+  image?: string;
+  price?: number;
+}[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Eiken Panelen Collectie",
+    url: `${SITE_URL}/producten`,
+    description: ORGANIZATION.description.nl,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: products.length,
+      itemListElement: products.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: product.url,
+        name: product.name,
+        ...(product.image && { image: product.image }),
+      })),
+    },
+  };
+}
+
+// ---- JSON-LD: FAQPage ----
+export function faqPageJsonLd(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}

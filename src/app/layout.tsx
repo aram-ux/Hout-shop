@@ -71,9 +71,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Voeg je verificatiecodes in zodra je die hebt:
-    // google: "je-google-verificatie-code",
-    // yandex: "je-yandex-code",
+    google: "TTyToLaLHHeMXKvZ75BGrY5RN0K2lqUM-XBLRtZK78U",
   },
 };
 

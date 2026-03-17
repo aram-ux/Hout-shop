@@ -19,14 +19,40 @@ export default function ContactContent({ contactData }: ContactContentProps) {
   const locale = useLocale() as Locale;
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate form submission
-    await new Promise((r) => setTimeout(r, 1000));
-    setSubmitted(true);
-    setLoading(false);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      subject: formData.get("subject") as string,
+      message: formData.get("message") as string,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Er ging iets fout. Probeer het opnieuw.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Er ging iets fout.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClasses =
@@ -62,24 +88,29 @@ export default function ContactContent({ contactData }: ContactContentProps) {
                 onSubmit={handleSubmit}
                 className="bg-white rounded-xl border border-oak-200 p-6 sm:p-8"
               >
+                {error && (
+                  <div className="mb-4 p-3 bg-error-light border border-error/20 rounded-lg text-error text-sm">
+                    {error}
+                  </div>
+                )}
                 <div className="grid sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className={labelClasses}>{t("form.name")} *</label>
-                    <input type="text" required className={inputClasses} />
+                    <input type="text" name="name" required className={inputClasses} />
                   </div>
                   <div>
                     <label className={labelClasses}>{t("form.email")} *</label>
-                    <input type="email" required className={inputClasses} />
+                    <input type="email" name="email" required className={inputClasses} />
                   </div>
                   <div>
                     <label className={labelClasses}>{t("form.phone")}</label>
-                    <input type="tel" className={inputClasses} />
+                    <input type="tel" name="phone" className={inputClasses} />
                   </div>
                   <div>
                     <label className={labelClasses}>
                       {t("form.subject")} *
                     </label>
-                    <select required className={inputClasses}>
+                    <select name="subject" required className={inputClasses}>
                       <option value="">{t("form.subject")}...</option>
                       <option value="general">
                         {t("form.subjects.general")}
@@ -97,6 +128,7 @@ export default function ContactContent({ contactData }: ContactContentProps) {
                 <div className="mb-6">
                   <label className={labelClasses}>{t("form.message")} *</label>
                   <textarea
+                    name="message"
                     required
                     rows={6}
                     className={inputClasses}
